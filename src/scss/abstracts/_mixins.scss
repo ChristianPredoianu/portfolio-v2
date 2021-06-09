@@ -1,0 +1,32 @@
+//Flexbox - Config
+//-------------------------------------------------------------------
+
+@mixin flex-config(
+  $display: false,
+  $wrap: false,
+  $direction: false,
+  $justify: false,
+  $align: false
+) {
+  @if $display != false {
+    display: $display;
+  }
+
+  @if $wrap !=false {
+    flex-wrap: $wrap;
+  }
+
+  @if $justify != false {
+    justify-content: $justify;
+  }
+
+  @if $direction != false {
+    flex-direction: $direction;
+  }
+
+  @if $align != false {
+    align-items: $align;
+  }
+}
+
+//-------------------------------------------------------------------//

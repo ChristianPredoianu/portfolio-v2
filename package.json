@@ -14,6 +14,10 @@
     "sass": "^1.34.1"
   },
   "dependencies": {
-    "parcel-bundler": "^1.12.5"
+    "gsap": "^3.6.1",
+    "nav": "0.0.2",
+    "parcel-bundler": "^1.12.5",
+    "typed": "^0.3.3",
+    "typed.js": "^2.0.12"
   }
 }

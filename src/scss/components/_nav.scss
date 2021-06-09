@@ -1,0 +1,83 @@
+@use 'abstracts' as *;
+
+nav {
+  @include flex-config($display: flex, $justify: space-between, $align: center);
+  height: 10vh;
+  padding: 0 3rem;
+
+  @include respond(phone) {
+    padding: 1rem;
+  }
+
+  a {
+    color: $color-primary;
+  }
+}
+
+.logo {
+  letter-spacing: 0.3rem;
+
+  &__heading {
+    font-size: clamp(1.2rem, 2vw, 2rem);
+    text-transform: uppercase;
+  }
+
+  &__subheading {
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    text-align: center;
+  }
+}
+
+.nav-links {
+  @include flex-config($display: flex, $justify: space-around);
+  width: 50%;
+  font-size: clamp(1.2rem, 2vw, 2rem);
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+
+  @include respond(tab-port) {
+    @include flex-config(
+      $direction: column,
+      $justify: space-evenly,
+      $align: center
+    );
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #080e29;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    z-index: 5;
+  }
+
+  a {
+    @include respond(tab-port) {
+      color: $color-secondary;
+    }
+  }
+}
+
+.hamburger {
+  z-index: 20;
+  @include respond(tab-port) {
+    cursor: pointer;
+  }
+
+  @include respond(phone) {
+    top: 5%;
+  }
+
+  &__line {
+    @include respond(tab-port) {
+      background: #0b16a8;
+      width: 3rem;
+      height: 0.3rem;
+      margin: 0.5rem;
+    }
+  }
+}
+
+.open {
+  display: flex;
+}

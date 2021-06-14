@@ -1,64 +1,26 @@
 import { gsap } from 'gsap';
-import Typed from 'typed.js';
 
-const tl = gsap.timeline();
+const tl = gsap.timeline({ defaults: { duration: 1 } });
 
-function initPortfolio() {
-  tl.from('.introduction', {
-    rotate: 50,
-    x: 700,
+tl.from('.introduction', {
+  x: -1500,
+  y: 0,
+  scale: 0,
+  opacity: 0,
+  /* ease: 'back', */
+})
+  .to('.introduction', {
+    x: 900,
     y: 50,
-    duration: 1.5,
     scale: 0,
     opacity: 0,
-    ease: 'back',
-    onComplete: introductionLeave,
-  });
-}
-
-function introductionLeave() {
-  tl.to('.introduction', {
-    rotate: -100,
-    x: 700,
-    y: 50,
-    stagger: 0,
-    duration: 1,
-    stagger: 0,
-    scale: 0,
+  })
+  .from('.animated', {
+    y: -50,
+    stagger: 0.4,
     opacity: 0,
-    onComplete: showHeadingPrimary,
-  });
-}
-
-function showHeadingPrimary() {
-  document.querySelector('.welcome-section__heading-primary').style.visibility =
-    'visible';
-  tl.from('.welcome-section__heading-primary', {
-    x: 0,
-    y: 0,
-    stagger: 0,
-    duration: 1,
-    scale: 2,
-    ease: 'back',
-    opacity: 0,
-    onComplete: showRemainingElements,
-  });
-}
-
-//Show the remaining element in welcome section (index.html)
-function showRemainingElements() {
-  document.querySelector('.animated').style.visibility = 'visible';
-  tl.from('.animated', {
-    x: 0,
-    y: 0,
-    ease: 'back',
-    opacity: 0,
-    onComplete: initIcons,
-  });
-}
-
-function initIcons() {
-  tl.to('.icons__icon', {
+  })
+  .to('.icons__icon', {
     x: 'random(-20, 20)', //chooses a random number between -20 and 20 for each target, rounding to the closest 5!
     y: 'random(-20, 10)',
     duration: 4,
@@ -67,6 +29,17 @@ function initIcons() {
     opacity: 1,
     repeatRefresh: true, // gets a new random x and y value on each repeat
   });
-}
 
-initPortfolio();
+//Hover effect on CTA (Projects-btn)
+const cta = document.querySelector('.welcome-section__cta');
+
+const hover = gsap.to('.welcome-section__cta', {
+  y: 2,
+  scale: 1.01,
+  duration: 0.1,
+  paused: true,
+  ease: 'power1.inOut',
+});
+
+cta.addEventListener('mouseenter', () => hover.play());
+cta.addEventListener('mouseleave', () => hover.reverse());

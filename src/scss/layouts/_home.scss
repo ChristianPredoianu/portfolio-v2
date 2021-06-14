@@ -51,11 +51,10 @@ main {
 
     &:hover {
       filter: drop-shadow(0.5rem 0.5rem 0.6rem rgb(184, 183, 183));
-      transform: scale(1.1);
-      transform: translateY(0.2rem);
       background-color: #000000;
     }
   }
+
   .social-icons {
     @include position($pos: absolute, $bottom: 0, $right: 0);
     @include flex-config(
@@ -89,10 +88,6 @@ main {
       }
     }
   }
-}
-
-.animated {
-  visibility: hidden;
 }
 
 .container-right {
@@ -135,7 +130,7 @@ main {
 .icons {
   @include position($pos: absolute, $bottom: 2rem);
   @include flex-config($display: flex, $justify: space-around);
-  width: 70%;
+  width: 75vw;
 
   @include respond(tab-port) {
     width: 100vw;

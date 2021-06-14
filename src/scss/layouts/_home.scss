@@ -80,6 +80,10 @@ main {
         margin-bottom: 2rem;
       }
 
+      &--linkedin {
+        color: #2867b2;
+      }
+
       @include respond(tab-port) {
         &:not(:last-of-type) {
           margin-bottom: 0;
@@ -139,5 +143,21 @@ main {
   &__icon {
     font-size: 5rem;
     opacity: 0.2;
+
+    &--html {
+      color: #ff4500;
+    }
+
+    &--css {
+      color: #0000ff;
+    }
+
+    &--js {
+      color: #f0db4f;
+    }
+
+    &--vue {
+      color: #008000;
+    }
   }
 }

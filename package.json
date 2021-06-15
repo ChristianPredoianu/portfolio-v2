@@ -17,6 +17,7 @@
     "@fortawesome/fontawesome-free": "^5.15.3",
     "gsap": "^3.6.1",
     "parcel-bundler": "^1.12.5",
+    "swiper": "^6.7.0",
     "typed": "^0.3.3",
     "typed.js": "^2.0.12"
   }

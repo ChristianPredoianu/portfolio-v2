@@ -4,48 +4,13 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 
-.introduction-container {
-  &__heading {
-    position: relative;
-    font-size: clamp(2rem, 4vw, 6rem);
-    letter-spacing: 1.8rem;
-    margin-right: -1.8rem;
-    padding: 1rem 0;
-
-    @include respond(phone) {
-      padding: 0.2rem 0;
-    }
-
-    @include respond(phone) {
-      letter-spacing: 1rem;
-    }
-
-    &::before {
-      @include pseudo($content: 'Christian Predoianu', $top: -1rem, $left: 0);
-      font-size: clamp(0.8rem, 1vw, 1.2rem);
-      letter-spacing: 0.2rem;
-
-      @include respond(phone) {
-        letter-spacing: 0;
-      }
-    }
-
-    &::after {
-      @include pseudo(
-        $content: 'Front end developer',
-        $bottom: -1rem,
-        $right: 0
-      );
-      font-size: clamp(0.8rem, 1vw, 1.2rem);
-      letter-spacing: 0.2rem;
-      margin-right: 1.8rem;
-
-      @include respond(phone) {
-        margin-right: 1rem;
-        letter-spacing: 0;
-      }
-    }
-  }
+.heading-primary {
+  font-size: clamp(1.8rem, 3vw, 4rem);
+  color: $color-primary;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2rem;
+  padding: 10rem 0;
 }
 
 .welcome-section {

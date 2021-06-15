@@ -4,8 +4,116 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Documendddt</title>
+    <title>Projects</title>
+    <link rel="stylesheet" href="scss/main.scss" />
     <script defer src="js/projects.js"></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html"
+            ><p class="logo__heading">Christian Predoianu</p>
+            <p class="logo__subheading">front end developer</p>
+          </a>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <div class="hamburger__line"></div>
+          <div class="hamburger__line"></div>
+          <div class="hamburger__line"></div>
+        </div>
+        <ul class="nav-links" role="list" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">About me</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Swiper -->
+    <h1 class="heading-primary">
+      <span class="typed"></span>
+    </h1>
+    <main class="projects-main">
+      <div class="swiper-container mySwiper">
+        <h4 class="swiper-container__heading">
+          <span class="typed-swiper-heading-one"></span>
+        </h4>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <!-- Swiper -->
+
+      <div class="swiper-container mySwiper">
+        <h4 class="swiper-container__heading">
+          <span class="typed-swiper-heading-two"></span>
+        </h4>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-icons">
+        <a
+          href="https://github.com/ChristianPredoianu"
+          rel="noopener"
+          target="_blank"
+        >
+          <i class="fab fa-github footer-icons__icon"></i
+        ></a>
+        <a
+          href="https://se.linkedin.com/in/christian-predoianu-369218157"
+          rel="noopener"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin-in footer-icons__icon"></i
+        ></a>
+        <a href="mailto:christianpredoianu@yahoo.com">
+          <i class="fas fa-envelope footer-icons__icon"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/christian.predoianu/"
+          rel="noopener"
+          target="_blank"
+        >
+          <i class="fab fa-facebook footer-icons__icon"></i
+        ></a>
+      </div>
+      <div class="footer-copyright">
+        <p>&copy; Christian Predoianu - 2021</p>
+      </div>
+    </footer>
+  </body>
 </html>

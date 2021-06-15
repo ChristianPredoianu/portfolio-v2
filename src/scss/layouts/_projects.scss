@@ -1,0 +1,16 @@
+@use 'abstracts' as *;
+@use 'utilities' as *;
+
+body {
+  background-color: rgb(250, 250, 250);
+}
+
+.projects-main {
+  @include flex-config($display: flex, $justify: space-around, $align: center);
+  color: $color-primary;
+  padding: 0 0 15rem 0;
+
+  @include respond(tab-land) {
+    flex-direction: column;
+  }
+}

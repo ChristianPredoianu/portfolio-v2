@@ -11,12 +11,13 @@ body {
   text-transform: uppercase;
   letter-spacing: 2rem;
   padding: 10rem 0;
+  filter: drop-shadow(0.2rem 0.2rem 0.6rem rgb(189, 189, 189));
 }
 
 .welcome-section {
   &__heading-primary {
     font-size: clamp(1.8rem, 3vw, 4rem);
-    filter: drop-shadow(0.5rem 0.5rem 0.6rem rgb(184, 183, 183));
+    filter: drop-shadow(0.8rem 0.8rem 0.6rem rgb(184, 183, 183));
   }
 
   &__heading-secondary {

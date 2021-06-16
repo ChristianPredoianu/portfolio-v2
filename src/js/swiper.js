@@ -1,8 +1,9 @@
-import Swiper from 'swiper/bundle';
-import SwiperCore, { Navigation, Pagination } from 'swiper/core';
+import Swiper from 'swiper';
+import SwiperCore, { Navigation, Pagination, EffectCube } from 'swiper/core';
 import 'swiper/swiper-bundle.css';
 
-SwiperCore.use([Navigation, Pagination]);
+SwiperCore.use([Navigation, Pagination, EffectCube]);
+
 const swiper = new Swiper('.mySwiper', {
   effect: 'cube',
   speed: 1500,

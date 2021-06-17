@@ -6,7 +6,6 @@ const hasAnimationPlayed = sessionStorage.getItem('hasAnimationPlayed');
 
 tl.from('.animated', {
   y: -50,
-
   stagger: 0.6,
   opacity: 0,
   onComplete: animationEnded,
@@ -15,8 +14,17 @@ tl.from('.animated', {
 tl.to('.icons__icon', {
   x: 'random(-20, 20)', //chooses a random number between -20 and 20 for each target, rounding to the closest 5!
   y: 'random(-20, 10)',
-  duration: 4,
-  ease: 'ease',
+  duration: 2,
+  ease: 'none',
+  repeat: -1,
+  opacity: 1,
+  repeatRefresh: true, // gets a new random x and y value on each repeat
+}).to('.container-right__icon', {
+  x: 'random(-5, 5)', //chooses a random number between -20 and 20 for each target, rounding to the closest 5!
+  y: 'random(-5, 5)',
+  duration: 2,
+  ease: 'none',
+  stagger: 0.2,
   repeat: -1,
   opacity: 1,
   repeatRefresh: true, // gets a new random x and y value on each repeat

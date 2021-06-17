@@ -3,7 +3,7 @@
 
 body {
   position: relative;
-  /* overflow: hidden; */
+  background-color: rgb(250, 250, 250);
 }
 
 .home-main {
@@ -17,9 +17,9 @@ body {
 }
 
 .container-left {
+  @include flex-config($display: flex, $align: center);
   grid-area: cont-left;
   min-height: 90vh;
-  @include flex-config($display: flex, $align: center);
 }
 
 .welcome-section {
@@ -42,8 +42,7 @@ body {
     );
     margin-top: 2rem;
     padding: 2rem 4rem;
-    text-transform: uppercase;
-    letter-spacing: 0.4rem;
+    @include textUppercaseSpacing($letterSpacing: 0.4rem);
     border-radius: 3%;
     cursor: pointer;
 
@@ -95,10 +94,70 @@ body {
 
 .container-right {
   grid-area: cont-right;
-  background: black url('../assets/images/bg2.jpg') center;
-  background-size: cover;
-  /*  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 81% 100%);
-  clip-path: polygon(0 0, 100% 0%, 100% 100%, 81% 100%); */
+  @include flex-config(
+    $display: flex,
+    $direction: column,
+    $justify: space-around,
+    $align: center
+  );
+  background-color: #fafafa;
+  font-size: 3rem;
+  position: relative;
+  padding: 2rem 0;
+
+  &::before {
+    content: '';
+    @include pseudo($top: 0, $left: -5%);
+    height: 25%;
+    border-width: 5px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, rgb(2, 29, 80), rgba(0, 0, 0, 0)) 1
+      100%;
+  }
+
+  &__icon {
+    opacity: 0;
+
+    &--typescript {
+      color: #0000ff;
+    }
+
+    &--nuxt {
+      color: #009100;
+    }
+
+    &--sass {
+      color: #ffc0cb;
+    }
+
+    &--tools {
+      color: rgb(5, 130, 161);
+    }
+
+    &--mobile {
+      color: orange;
+    }
+
+    &--code {
+      color: #800080;
+    }
+
+    &--bem {
+      color: #808080;
+    }
+
+    &--tailwind {
+      color: #04be04;
+    }
+
+    &--figma {
+      color: orangered;
+    }
+
+    &--bootstrap {
+      color: #0000ff;
+    }
+  }
 
   @include respond(tab-port) {
     display: none;

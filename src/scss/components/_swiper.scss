@@ -81,10 +81,15 @@
 }
 
 .swiper-slide-container {
-  @include flex-config($display: flex, $direction: column, $align: center);
+  @include flex-config(
+    $display: flex,
+    $direction: column,
+    $justify: space-around,
+    $align: center
+  );
+  height: 100%;
   background-color: rgb(32, 32, 32, 0.7);
   color: $color-secondary;
-  height: 100%;
   text-align: center;
   opacity: 0;
   transition: opacity 0.5s linear;
@@ -101,45 +106,44 @@
     font-size: clamp(1.5rem, 2vw, 3rem);
     letter-spacing: 0.5rem;
     text-transform: uppercase;
-    padding: 5rem 2rem 2rem 2rem;
+    padding: 0 2rem;
 
     @include respond(phone) {
-      padding: 2rem 1rem;
       letter-spacing: 0.2rem;
     }
   }
 
   &__link {
     font-size: clamp(1.5rem, 2vw, 2rem);
-    color: #ffae00;
-    padding-bottom: 2rem;
+    color: $color-orange;
+    margin-top: 2rem;
+    transition: color 0.2s ease;
     cursor: pointer;
     font-weight: normal;
-    transition: color 0.2s ease;
 
     &:hover {
-      color: #74fc62;
+      color: $color-green;
     }
   }
 
   &__made-with {
     font-size: clamp(1.8rem, 2vw, 2rem);
-    padding: 0.5rem 0;
+    margin: -4rem 0 2rem 0;
 
     @include respond(phone) {
-      padding: 0 0 1rem 0;
+      margin: 1rem 0 2rem 0;
     }
   }
 
   &__icon {
     font-size: clamp(2.5rem, 2vw, 5rem);
-    color: #ffae00;
-    margin-top: 2rem;
-    cursor: pointer;
+    color: $color-orange;
+    margin-bottom: 2rem;
     transition: color 0.2s ease;
+    cursor: pointer;
 
     &:hover {
-      color: #74fc62;
+      color: $color-green;
     }
   }
 }
@@ -147,13 +151,12 @@
 .made-with-list {
   font-size: clamp(1.5rem, 2vw, 1.8rem);
   font-style: italic;
-  margin-top: 0.5rem;
 
   &__item {
     font-size: clamp(1.5rem, 2vw, 1.8rem);
 
     &:not(:first-child) {
-      padding-top: 1rem;
+      margin-top: 0.8rem;
     }
   }
 }
@@ -163,15 +166,16 @@
   width: 100%;
 }
 
+//Swiper navigation
 .swiper-button-next {
   right: -5rem !important;
-  color: rgb(32, 32, 32) !important;
+  color: $color-primary !important;
   margin-top: 5rem !important;
 
   &::after {
     @include respond(phone) {
       font-size: 3rem !important;
-      color: #ffa500 !important;
+      color: $color-orange !important;
     }
   }
 
@@ -182,13 +186,13 @@
 
 .swiper-button-prev {
   left: -5rem !important;
-  color: rgb(32, 32, 32) !important;
+  color: $color-primary !important;
   margin-top: 5rem !important;
 
   &::after {
     @include respond(phone) {
       font-size: 3rem !important;
-      color: #ffa500 !important;
+      color: $color-orange !important;
     }
   }
 
@@ -206,5 +210,5 @@
 }
 
 .swiper-pagination-bullet {
-  background-color: black !important;
+  background-color: $color-primary !important;
 }

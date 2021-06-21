@@ -40,11 +40,34 @@ function hoverOnCta() {
     paused: true,
   });
 
-  cta.addEventListener('mouseenter', () => hover.play());
-  cta.addEventListener('mouseleave', () => hover.reverse());
+  hoverAnimationPlay(cta, hover);
+  hoverAnimationReverse(cta, hover);
+}
+
+//Hover effect on github - linkedin icons on homepage
+function hoverOnSocialIcons() {
+  const socialIcons = document.querySelectorAll('.social-icons__icon');
+  socialIcons.forEach((socialIcon) => {
+    const hover = gsap.to(socialIcon, {
+      scale: 1.01,
+      duration: 0.2,
+      paused: true,
+    });
+    hoverAnimationPlay(socialIcon, hover);
+    hoverAnimationReverse(socialIcon, hover);
+  });
+}
+
+function hoverAnimationPlay(element, animation) {
+  element.addEventListener('mouseenter', () => animation.play());
+}
+
+function hoverAnimationReverse(element, animation) {
+  element.addEventListener('mouseleave', () => animation.reverse());
 }
 
 function animationEnded() {
   hoverOnCta();
+  hoverOnSocialIcons();
   sessionStorage.setItem('hasAnimationPlayed', true);
 }

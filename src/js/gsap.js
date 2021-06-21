@@ -49,7 +49,7 @@ function hoverOnSocialIcons() {
   const socialIcons = document.querySelectorAll('.social-icons__icon');
   socialIcons.forEach((socialIcon) => {
     const hover = gsap.to(socialIcon, {
-      scale: 1.01,
+      scale: 1.2,
       duration: 0.2,
       paused: true,
     });

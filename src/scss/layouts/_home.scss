@@ -92,6 +92,37 @@ body {
   }
 }
 
+.icons {
+  @include position($pos: absolute, $bottom: 2rem);
+  @include flex-config($display: flex, $justify: space-around);
+  width: 75vw;
+
+  @include respond(tab-port) {
+    width: 100vw;
+  }
+
+  &__icon {
+    font-size: 5rem;
+    opacity: 0.2;
+
+    &--html {
+      color: #ff4500;
+    }
+
+    &--css {
+      color: #0000ff;
+    }
+
+    &--js {
+      color: #f0db4f;
+    }
+
+    &--vue {
+      color: #008000;
+    }
+  }
+}
+
 .container-right {
   grid-area: cont-right;
   @include flex-config(
@@ -161,36 +192,5 @@ body {
 
   @include respond(tab-port) {
     display: none;
-  }
-}
-
-.icons {
-  @include position($pos: absolute, $bottom: 2rem);
-  @include flex-config($display: flex, $justify: space-around);
-  width: 75vw;
-
-  @include respond(tab-port) {
-    width: 100vw;
-  }
-
-  &__icon {
-    font-size: 5rem;
-    opacity: 0.2;
-
-    &--html {
-      color: #ff4500;
-    }
-
-    &--css {
-      color: #0000ff;
-    }
-
-    &--js {
-      color: #f0db4f;
-    }
-
-    &--vue {
-      color: #008000;
-    }
   }
 }

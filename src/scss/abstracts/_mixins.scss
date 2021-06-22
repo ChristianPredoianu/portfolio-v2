@@ -91,12 +91,77 @@
   }
 }
 
+//-------------------------------------------------------------------//
+
 //Text transfor letter spacing - Mixin
 //-------------------------------------------------------------------
 
 @mixin textUppercaseSpacing($textTransform: uppercase, $letterSpacing) {
   text-transform: $textTransform;
   letter-spacing: $letterSpacing;
+}
+
+//-------------------------------------------------------------------//
+
+//Color mixin for icons
+//-------------------------------------------------------------------
+
+@mixin icons() {
+  &--html {
+    color: #ff4500;
+  }
+
+  &--css {
+    color: #0000ff;
+  }
+
+  &--js {
+    color: #f0db4f;
+  }
+
+  &--vue {
+    color: #008000;
+  }
+
+  &--typescript {
+    color: #0000ff;
+  }
+
+  &--nuxt {
+    color: #009100;
+  }
+
+  &--sass {
+    color: #ffc0cb;
+  }
+
+  &--tools {
+    color: rgb(5, 130, 161);
+  }
+
+  &--mobile {
+    color: orange;
+  }
+
+  &--code {
+    color: #800080;
+  }
+
+  &--bem {
+    color: #808080;
+  }
+
+  &--tailwind {
+    color: #04be04;
+  }
+
+  &--figma {
+    color: #ff4500;
+  }
+
+  &--bootstrap {
+    color: #0000ff;
+  }
 }
 
 //-------------------------------------------------------------------//

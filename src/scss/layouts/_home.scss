@@ -102,24 +102,9 @@ body {
   }
 
   &__icon {
+    @include icons;
     font-size: 5rem;
     opacity: 0.2;
-
-    &--html {
-      color: #ff4500;
-    }
-
-    &--css {
-      color: #0000ff;
-    }
-
-    &--js {
-      color: #f0db4f;
-    }
-
-    &--vue {
-      color: #008000;
-    }
   }
 }
 
@@ -137,7 +122,6 @@ body {
   padding: 2rem 0;
 
   &::before {
-    content: '';
     @include pseudo($top: 0, $left: -5%);
     height: 25%;
     border-width: 5px;
@@ -147,47 +131,8 @@ body {
   }
 
   &__icon {
+    @include icons;
     opacity: 0;
-
-    &--typescript {
-      color: #0000ff;
-    }
-
-    &--nuxt {
-      color: #009100;
-    }
-
-    &--sass {
-      color: #ffc0cb;
-    }
-
-    &--tools {
-      color: rgb(5, 130, 161);
-    }
-
-    &--mobile {
-      color: orange;
-    }
-
-    &--code {
-      color: #800080;
-    }
-
-    &--bem {
-      color: #808080;
-    }
-
-    &--tailwind {
-      color: #04be04;
-    }
-
-    &--figma {
-      color: orangered;
-    }
-
-    &--bootstrap {
-      color: #0000ff;
-    }
   }
 
   @include respond(tab-port) {

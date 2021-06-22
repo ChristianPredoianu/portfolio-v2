@@ -6,26 +6,25 @@ body {
 
 .heading-primary {
   @include textUppercaseSpacing($letterSpacing: 2rem);
+  @include headings;
   font-size: clamp(1.8rem, 3vw, 4rem);
-  color: $color-primary;
-  text-align: center;
-  padding: 10rem 0;
-  filter: drop-shadow(0.2rem 0.2rem 0.6rem rgb(189, 189, 189));
 }
 
 .heading-secondary {
   @include textUppercaseSpacing($letterSpacing: 1rem);
+  @include headings;
   font-size: clamp(1.5rem, 3vw, 3rem);
-  color: $color-primary;
-  text-align: center;
-  padding: 10rem 0;
-  filter: drop-shadow(0.2rem 0.2rem 0.6rem rgb(189, 189, 189));
 }
 
 .welcome-section {
   &__heading-primary {
-    font-size: clamp(1.8rem, 3vw, 4rem);
+    font-size: 4.5rem;
     filter: drop-shadow(0.8rem 0.8rem 0.6rem rgb(184, 183, 183));
+    width: 100%;
+
+    @include respond(phone) {
+      font-size: 2rem;
+    }
   }
 
   &__heading-secondary {
@@ -37,7 +36,17 @@ body {
 
 .about-me-info {
   &__paragraph {
-    font-size: clamp(1rem, 2vw, 2rem);
+    font-size: clamp(1.5rem, 3vw, 2.3rem);
     margin-top: -10rem;
+    line-height: 3.2rem;
+
+    @include respond(phone) {
+      line-height: normal;
+    }
+
+    @include respond(tab-port) {
+      margin-top: 10rem;
+      text-align: center;
+    }
   }
 }

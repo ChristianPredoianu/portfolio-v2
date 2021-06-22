@@ -5,10 +5,19 @@ body {
 }
 
 .heading-primary {
+  @include textUppercaseSpacing($letterSpacing: 2rem);
   font-size: clamp(1.8rem, 3vw, 4rem);
   color: $color-primary;
   text-align: center;
-  @include textUppercaseSpacing($letterSpacing: 2rem);
+  padding: 10rem 0;
+  filter: drop-shadow(0.2rem 0.2rem 0.6rem rgb(189, 189, 189));
+}
+
+.heading-secondary {
+  @include textUppercaseSpacing($letterSpacing: 1rem);
+  font-size: clamp(1.5rem, 3vw, 3rem);
+  color: $color-primary;
+  text-align: center;
   padding: 10rem 0;
   filter: drop-shadow(0.2rem 0.2rem 0.6rem rgb(189, 189, 189));
 }
@@ -29,5 +38,6 @@ body {
 .about-me-info {
   &__paragraph {
     font-size: clamp(1rem, 2vw, 2rem);
+    margin-top: -10rem;
   }
 }

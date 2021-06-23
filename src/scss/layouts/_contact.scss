@@ -1,0 +1,50 @@
+@use 'abstracts' as *;
+
+.section-contact {
+  @include flex-config($display: flex, $justify: center, $align: center);
+  position: relative;
+  min-height: 70vh;
+
+  @include respond(phone) {
+    flex-direction: column-reverse;
+  }
+
+  &::before {
+    @include pseudo($top: 15%, $left: 5%);
+    border-width: 5px;
+    border-style: solid;
+    border-image: linear-gradient(to right, rgb(2, 29, 80), rgba(0, 0, 0, 0)) 1;
+  }
+}
+
+.contact-info {
+  @include flex-config($display: flex, $justify: space-around, $align: center);
+  width: 70%;
+
+  @include respond(phone) {
+    margin-top: 5rem;
+    padding-bottom: 8rem;
+  }
+
+  &__icon {
+    font-size: clamp(2rem, 3vw, 3rem);
+    cursor: pointer;
+    padding: 2rem;
+    background-color: #000000;
+    color: $color-secondary;
+    border-radius: 50%;
+
+    @include respond(phone) {
+      padding: 1.5rem;
+    }
+  }
+}
+
+.contact-info-img {
+  width: 30%;
+
+  @include respond(phone) {
+    width: 50%;
+    margin-top: 8rem;
+  }
+}

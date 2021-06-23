@@ -2,14 +2,25 @@
 
 .about-me {
   @include flex-config($display: flex, $justify: space-around, $align: center);
-  margin: 23rem auto 0 auto;
-  padding: 0 10rem;
-  line-height: 3.2rem;
+  margin: 30rem auto 20rem auto;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+    margin: 10rem auto 0 auto;
+  }
 }
 
 .img-container {
   width: 15%;
   position: relative;
+
+  @include respond(tab-land) {
+    margin-top: 5rem;
+  }
+
+  @include respond(phone) {
+    width: 30%;
+  }
 
   &::before {
     @include pseudo($top: -50%, $left: -10%);
@@ -49,23 +60,38 @@
 
 .about-me-info {
   width: 50%;
-}
 
-.technologies-section {
-  padding: 10rem 0 20rem 0;
-}
-
-.technologies-container {
-  @include flex-config($display: flex, $justify: space-between);
-
-  &:not(:last-child) {
-    margin-bottom: 5rem;
+  @include respond(tab-port) {
+    width: 80%;
   }
+}
+
+.section-tech {
+  margin: 10rem 0 15rem 0;
+}
+
+.container-tech {
+  @include flex-config($display: flex, $justify: space-between, $wrap: wrap);
+}
+
+.tech-icons-container {
+  @include flex-config(
+    $display: flex,
+    $direction: column,
+    $align: center,
+    $justify: space-around
+  );
+  flex: 1;
+  margin: 2rem;
 
   &__icon {
-    flex: 1;
     @include icons;
+    font-size: 4rem;
+  }
+
+  &__paragraph {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
     text-align: center;
-    font-size: clamp(3rem, 3vw, 5rem);
   }
 }

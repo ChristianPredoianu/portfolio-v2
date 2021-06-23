@@ -1,5 +1,10 @@
 import nav from '../nav';
 import { gsap } from 'gsap';
+import {
+  hoverOnSocialIcons,
+  hoverAnimationPlay,
+  hoverAnimationReverse,
+} from '../socialIconsAnimation';
 
 import '@fortawesome/fontawesome-free/css/brands.css';
 import '@fortawesome/fontawesome-free/css/solid.css';
@@ -8,6 +13,8 @@ import '@fortawesome/fontawesome-free/css/fontawesome.css';
 const tl = gsap.timeline({ defaults: { duration: 1 } });
 
 const hasAnimationPlayed = sessionStorage.getItem('hasAnimationPlayed');
+
+const socialIcons = document.querySelectorAll('.social-icons__icon');
 
 if (!hasAnimationPlayed) {
   tl.from('.animated', {
@@ -56,29 +63,7 @@ function hoverOnCta() {
   hoverAnimationReverse(cta, hover);
 }
 
-//Hover effect on github - linkedin icons on homepage
-function hoverOnSocialIcons() {
-  const socialIcons = document.querySelectorAll('.social-icons__icon');
-  socialIcons.forEach((socialIcon) => {
-    const hover = gsap.to(socialIcon, {
-      scale: 1.2,
-      duration: 0.2,
-      paused: true,
-    });
-    hoverAnimationPlay(socialIcon, hover);
-    hoverAnimationReverse(socialIcon, hover);
-  });
-}
-
-function hoverAnimationPlay(element, animation) {
-  element.addEventListener('mouseenter', () => animation.play());
-}
-
-function hoverAnimationReverse(element, animation) {
-  element.addEventListener('mouseleave', () => animation.reverse());
-}
-
 function animationEnded() {
   hoverOnCta();
-  hoverOnSocialIcons();
+  hoverOnSocialIcons(socialIcons);
 }

@@ -131,6 +131,15 @@
 
   &--nuxt {
     color: #009100;
+    font-size: 3rem;
+  }
+
+  &--parcel {
+    color: #b5651d;
+  }
+
+  &--webpack {
+    color: #3b3bdb;
   }
 
   &--sass {
@@ -151,6 +160,7 @@
 
   &--bem {
     color: #808080;
+    font-size: 3rem;
   }
 
   &--tailwind {

@@ -8,29 +8,37 @@ import '@fortawesome/fontawesome-free/css/brands.css';
 import '@fortawesome/fontawesome-free/css/solid.css';
 import '@fortawesome/fontawesome-free/css/fontawesome.css';
 
-const imgBefore = CSSRulePlugin.getRule('.img-container::before');
-const imgAfter = CSSRulePlugin.getRule('.img-container::after');
+document.addEventListener('DOMContentLoaded', () => {
+  window.addEventListener(
+    'load',
+    () => {
+      const imgBefore = CSSRulePlugin.getRule('.img-container::before');
+      const imgAfter = CSSRulePlugin.getRule('.img-container::after');
 
-gsap.to(imgBefore, {
-  duration: 3,
+      gsap.to(imgBefore, {
+        duration: 3,
 
-  cssRule: {
-    y: -10,
-    x: 10,
+        cssRule: {
+          y: -10,
+          x: 10,
 
-    opacity: 0.9,
-  },
-  yoyo: true,
-  repeat: -1,
-});
+          opacity: 0.9,
+        },
+        yoyo: true,
+        repeat: -1,
+      });
 
-gsap.to(imgAfter, {
-  duration: 3,
-  cssRule: {
-    x: -10,
-    y: 10,
-    opacity: 0.4,
-  },
-  yoyo: true,
-  repeat: -1,
+      gsap.to(imgAfter, {
+        duration: 3,
+        cssRule: {
+          x: -10,
+          y: 10,
+          opacity: 0.4,
+        },
+        yoyo: true,
+        repeat: -1,
+      });
+    },
+    false
+  );
 });

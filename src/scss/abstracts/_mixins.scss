@@ -131,7 +131,7 @@
 
   &--nuxt {
     color: #009100;
-    font-size: 3rem;
+    font-size: clamp(2rem, 2vw, 3rem);
   }
 
   &--parcel {
@@ -160,7 +160,7 @@
 
   &--bem {
     color: #808080;
-    font-size: 3rem;
+    font-size: clamp(2rem, 2vw, 3rem);
   }
 
   &--tailwind {

@@ -12,8 +12,8 @@ import '@fortawesome/fontawesome-free/css/fontawesome.css';
 
 const tl = gsap.timeline({ defaults: { duration: 1 } });
 
-const hasAnimationPlayed = sessionStorage.getItem('hasAnimationPlayed');
-
+const hasAnimationPlayed = sessionStorage.getItem('isHeroAnimated');
+const isIconsRevealed = sessionStorage.getItem('isIconsRevealed');
 const socialIcons = document.querySelectorAll('.social-icons__icon');
 
 if (!hasAnimationPlayed) {
@@ -22,7 +22,7 @@ if (!hasAnimationPlayed) {
     stagger: 0.6,
     opacity: 0,
     onComplete: () => {
-      sessionStorage.setItem('hasAnimationPlayed', true);
+      sessionStorage.setItem('isHeroAnimated', true);
       animationEnded();
     },
   });
@@ -38,16 +38,24 @@ tl.to('.icons__icon', {
   repeat: -1,
   opacity: 1,
   repeatRefresh: true, // gets a new random x and y value on each repeat
-}).to('.container-right__icon', {
-  x: 'random(-5, 5)', //chooses a random number between -20 and 20 for each target, rounding to the closest 5!
-  y: 'random(-5, 5)',
-  duration: 2,
-  ease: 'none',
-  stagger: 0.2,
-  repeat: -1,
-  opacity: 1,
-  repeatRefresh: true, // gets a new random x and y value on each repeat
 });
+
+if (!isIconsRevealed) {
+  tl.to('.container-right__icon', {
+    duration: 2,
+    ease: 'none',
+    stagger: 0.2,
+    opacity: 1,
+    onComplete: () => {
+      sessionStorage.setItem('isIconsRevealed', true);
+    },
+  });
+} else {
+  const icons = document.querySelectorAll('.container-right__icon');
+  icons.forEach((icon) => {
+    icon.style.opacity = 1;
+  });
+}
 
 //Hover effect on CTA (Projects-btn)
 function hoverOnCta() {

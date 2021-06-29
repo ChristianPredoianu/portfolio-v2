@@ -64,17 +64,16 @@ body {
       $justify: flex-end,
       $align: flex-end
     );
-
     width: 30%;
-
     padding: 0 1.5rem;
 
     @include respond(tab-port) {
       flex-direction: row;
+      bottom: 7%;
     }
 
     &__icon {
-      font-size: clamp(2rem, 2vw, 3rem);
+      font-size: clamp(2rem, 3vw, 3rem);
       margin-top: 2rem;
       cursor: pointer;
 
@@ -107,7 +106,7 @@ body {
 
   &__icon {
     @include icons;
-    font-size: 5rem;
+    font-size: clamp(2rem, 3vw, 5rem);
     opacity: 0.2;
   }
 }
@@ -121,7 +120,7 @@ body {
     $align: center
   );
   background-color: #fafafa;
-  font-size: 3rem;
+  font-size: clamp(2rem, 2vw, 3rem);
   position: relative;
   padding: 2rem 0;
 

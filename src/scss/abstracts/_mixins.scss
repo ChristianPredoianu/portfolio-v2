@@ -131,7 +131,7 @@
 
   &--nuxt {
     color: #009100;
-    font-size: clamp(2rem, 2vw, 3rem);
+    font-size: clamp(2rem, 1.5vw, 4rem);
   }
 
   &--parcel {
@@ -160,7 +160,7 @@
 
   &--bem {
     color: #808080;
-    font-size: clamp(2rem, 2vw, 3rem);
+    font-size: clamp(2rem, 1.5vw, 4rem);
   }
 
   &--tailwind {
@@ -195,7 +195,7 @@
 600-900px:    Tablet: Portrait
 900-1200px:   Tablet Landscape
 [1200-1800px] Is where the normal styles apply
-1800px + :    Big Desktop
+1920px + :    Big Desktop
 $breakpoint argument choices
 - fold
 - phone
@@ -236,8 +236,8 @@ $breakpoint argument choices
   }
 
   @if $breakpoint == big-desktop {
-    @media (min-width: 112.5em) {
-      //1800px
+    @media (min-width: 120em) {
+      //1920px
       @content;
     }
   }

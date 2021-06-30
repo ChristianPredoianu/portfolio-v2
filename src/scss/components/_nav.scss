@@ -3,7 +3,11 @@
 nav {
   @include flex-config($display: flex, $justify: space-between, $align: center);
   height: 10vh;
-  padding: 0 3rem;
+  padding: 0 6rem;
+
+  @include respond(tab-port) {
+    padding: 0 3rem;
+  }
 
   @include respond(phone) {
     padding: 1rem;
@@ -15,16 +19,16 @@ nav {
 }
 
 .logo {
-  letter-spacing: 0.3rem;
-
   &__heading {
-    font-size: clamp(1.2rem, 2vw, 2rem);
+    font-size: clamp(1.4rem, 0.8vw, 4rem);
     text-transform: uppercase;
+    letter-spacing: 0.2rem;
   }
 
   &__subheading {
-    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    font-size: clamp(1.2rem, 0.6vw, 2.5rem);
     text-align: center;
+    font-style: italic;
   }
 }
 
@@ -32,7 +36,7 @@ nav {
   @include flex-config($display: flex, $justify: space-around);
   @include textUppercaseSpacing($letterSpacing: 0.2rem);
   width: 50%;
-  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  font-size: clamp(1.2rem, 0.8vw, 5rem);
   animation: fade 0.4s ease;
 
   @include respond(tab-port) {

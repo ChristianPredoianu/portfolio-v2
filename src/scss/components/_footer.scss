@@ -1,14 +1,16 @@
 @use 'abstracts' as *;
 
 footer {
+  @include position($pos: absolute, $bottom: 0);
   @include flex-config($display: flex, $direction: column, $align: center);
+  width: 100%;
   background-color: #0a0a0a;
 }
 
 .footer-icons {
   width: 50%;
   @include flex-config($display: flex, $justify: space-around);
-  font-size: clamp(1.8rem, 2vw, 2rem);
+  font-size: clamp(1.8rem, 1vw, 3rem);
   padding: 2rem 0;
   color: $color-secondary;
 
@@ -29,6 +31,7 @@ footer {
   width: 100%;
   background-color: #080808;
   color: #979797;
+  font-size: clamp(1rem, 0.6vw, 2rem);
   text-align: center;
   padding: 1rem 0;
 }

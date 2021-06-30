@@ -67,7 +67,7 @@
 }
 
 .section-tech {
-  margin: 10rem 0 15rem 0;
+  padding: 10rem 0 30rem 0;
 }
 
 .container-tech {
@@ -81,17 +81,20 @@
     $align: center,
     $justify: space-around
   );
+  box-shadow: 6px 2px 18px 5px rgba(0, 0, 0, 0.1);
+  padding: 3rem 7rem;
   flex: 1;
   margin: 2rem;
 
   &__icon {
     @include icons;
-    font-size: 4rem;
+    font-size: clamp(4rem, 2vw, 7rem);
   }
 
   &__paragraph {
-    font-size: 1.2rem;
+    font-size: clamp(1.3rem, 0.5vw, 2rem);
     margin-top: 1.5rem;
     text-align: center;
+    font-weight: 700;
   }
 }

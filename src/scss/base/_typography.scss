@@ -7,38 +7,41 @@ body {
 .heading-primary {
   @include textUppercaseSpacing($letterSpacing: 2rem);
   @include headings;
-  font-size: clamp(1.8rem, 3vw, 4rem);
+  font-size: clamp(1.8rem, 2vw, 8rem);
 }
 
 .heading-secondary {
   @include textUppercaseSpacing($letterSpacing: 1rem);
   @include headings;
-  font-size: clamp(1.5rem, 3vw, 3rem);
+  font-size: clamp(1.5rem, 2vw, 8rem);
 }
 
 .welcome-section {
   &__heading-primary {
-    font-size: clamp(2.5rem, 3.5vw, 4.5rem);
+    font-size: clamp(2.5rem, 2vw, 7rem);
     filter: drop-shadow(0.8rem 0.8rem 0.6rem rgb(184, 183, 183));
     width: 100%;
-
-    /*   @include respond(phone) {
-      font-size: 2rem;
-    } */
   }
 
   &__heading-secondary {
-    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    font-size: clamp(1.8rem, 1vw, 4rem);
     margin-bottom: 1rem;
     letter-spacing: 0.5rem;
   }
 }
 
+.swiper-container {
+  &__heading {
+    font-size: clamp(1.5rem, 1vw, 3rem);
+    text-align: center;
+    padding: 2rem 0;
+  }
+}
+
 .about-me-info {
   &__paragraph {
-    font-size: clamp(1.5rem, 3vw, 2.3rem);
+    font-size: clamp(1.5rem, 1.2vw, 3rem);
     margin-top: -10rem;
-    line-height: 3.2rem;
 
     @include respond(phone) {
       line-height: normal;

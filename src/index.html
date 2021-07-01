@@ -4,12 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="Description"
+      content="Portfolio site. Christian Predoianu - Front end developer based in Sweden "
+    />
+    <title>
+      Christian Predoianu | Front-end developer based in Sweden | Portfolio
+    </title>
     <link rel="stylesheet" href="scss/main.scss" />
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" /> -->
     <link
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/images/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/images/favicon-16x16.png"
+      sizes="16x16"
     />
     <script defer src="js/views/index.js"></script>
   </head>
@@ -49,38 +66,63 @@
             >Projects</a
           >
           <div class="social-icons animated">
-            <i class="fab fa-github social-icons__icon social-icons__icon"></i>
-            <i
-              class="
-                fab
-                fa-linkedin-in
-                social-icons__icon social-icons__icon--linkedin
-              "
-            ></i>
+            <a
+              href="https://github.com/ChristianPredoianu"
+              rel="noopener"
+              target="_blank"
+              ><i
+                class="
+                  fab
+                  fa-github
+                  social-icons__icon social-icons__icon--github
+                "
+              ></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/christian-predoianu-369218157/"
+              rel="noopener"
+              target="_blank"
+              ><i
+                class="
+                  fab
+                  fa-linkedin-in
+                  social-icons__icon social-icons__icon--linkedin
+                "
+              ></i
+            ></a>
           </div>
         </div>
 
         <div class="icons">
-          <i class="fab fa-html5 icons__icon icons__icon--html"></i>
-          <i class="fab fa-css3-alt icons__icon icons__icon--css"></i>
-          <i class="fab fa-js-square icons__icon icons__icon--js"></i>
-          <i class="fab fa-vuejs icons__icon icons__icon--vue"></i>
+          <div class="icons__icon icons__icon--html">
+            <i class="fab fa-html5"></i>
+          </div>
+          <div class="icons__icon icons__icon--css">
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <div class="icons__icon icons__icon--js">
+            <i class="fab fa-js-square"></i>
+          </div>
+          <div class="icons__icon icons__icon--vue">
+            <i class="fab fa-vuejs"></i>
+          </div>
         </div>
       </div>
       <div class="container-right">
         <p class="container-right__icon container-right__icon--nuxt">NUXT</p>
-        <i class="fab fa-github container-right__icon"></i>
-        <i
-          class="fab fa-sass container-right__icon container-right__icon--sass"
-        ></i>
-        <i class="fas fa-terminal container-right__icon"></i>
-        <i
-          class="
-            fas
-            fa-tools
-            container-right__icon container-right__icon--tools
-          "
-        ></i>
+        <div class="container-right__icon">
+          <i class="fab fa-github"></i>
+        </div>
+        <div class="container-right__icon container-right__icon--sass">
+          <i class="fab fa-sass"></i>
+        </div>
+        <div class="container-right__icon container-right__icon--terminal">
+          <i class="fas fa-terminal"></i>
+        </div>
+        <div class="container-right__icon container-right__icon--tools">
+          <i class="fas fa-tools"></i>
+        </div>
+
         <i
           class="
             fas

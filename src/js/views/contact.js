@@ -1,22 +1,31 @@
 import nav from '../nav';
 import Typed from 'typed.js';
-import { contactHeadingOptions } from '../typedOptions';
 import gsap from 'gsap';
 import { CSSRulePlugin } from 'gsap/CSSRulePlugin';
+import { contactHeadingOptions } from '../typedOptions';
 import { hoverOnSocialIcons } from '../socialIconsAnimation';
+import { library, dom } from '@fortawesome/fontawesome-svg-core';
+import {
+  faFacebook,
+  faGithub,
+  faLinkedinIn,
+} from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
-import '@fortawesome/fontawesome-free/css/brands.css';
-import '@fortawesome/fontawesome-free/css/regular.css';
-import '@fortawesome/fontawesome-free/css/fontawesome.css';
+library.add(faFacebook, faGithub, faLinkedinIn, faEnvelope);
+dom.watch();
 
 const isTypedContact = sessionStorage.getItem('isTypedContact');
 
+//////////////////////////Typed.js//////////////////////////
 if (!isTypedContact) {
   const headingTyped = new Typed('.contact-typed', contactHeadingOptions);
 } else {
   document.querySelector('.contact-typed').innerText = 'Contact Me';
 }
+///////////////////////////////////////////////////////////
 
+//////////////////////GSAP/////////////////////////////////
 gsap.registerPlugin(CSSRulePlugin);
 
 const tl = gsap.timeline({ defaults: { duration: 1 } });
@@ -58,3 +67,4 @@ tl.from(
 function animationEnded() {
   hoverOnSocialIcons(socialIconsContact);
 }
+//////////////////////////////////

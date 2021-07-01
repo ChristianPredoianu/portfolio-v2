@@ -5,9 +5,45 @@ import {
   hoverAnimationPlay,
   hoverAnimationReverse,
 } from '../socialIconsAnimation';
+import { library, dom } from '@fortawesome/fontawesome-svg-core';
+import {
+  faGithub,
+  faLinkedinIn,
+  faHtml5,
+  faCss3Alt,
+  faJsSquare,
+  faVuejs,
+  faSass,
+  faFigma,
+  faBootstrap,
+} from '@fortawesome/free-brands-svg-icons';
+import {
+  faTerminal,
+  faTools,
+  faMobile,
+  faCode,
+  faWind,
+} from '@fortawesome/free-solid-svg-icons';
 
-import '@fortawesome/fontawesome-free/css/brands.css';
-import '@fortawesome/fontawesome-free/css/solid.css';
+library.add(
+  faGithub,
+  faLinkedinIn,
+  faHtml5,
+  faCss3Alt,
+  faJsSquare,
+  faVuejs,
+  faSass,
+  faFigma,
+  faBootstrap,
+  faTerminal,
+  faTools,
+  faMobile,
+  faCode,
+  faWind
+);
+
+dom.watch();
+
 import '@fortawesome/fontawesome-free/css/fontawesome.css';
 
 const tl = gsap.timeline({ defaults: { duration: 1 } });

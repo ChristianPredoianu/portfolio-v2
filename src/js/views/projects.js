@@ -7,9 +7,17 @@ import {
   swiperHeadingTwoOptions,
 } from '../typedOptions';
 
-import '@fortawesome/fontawesome-free/css/brands.css';
-import '@fortawesome/fontawesome-free/css/solid.css';
+import { library, dom } from '@fortawesome/fontawesome-svg-core';
+import {
+  faFacebook,
+  faGithub,
+  faLinkedinIn,
+} from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import '@fortawesome/fontawesome-free/css/fontawesome.css';
+
+library.add(faFacebook, faGithub, faLinkedinIn, faEnvelope);
+dom.watch();
 
 const isTypedProjects = sessionStorage.getItem('isTypedProjects');
 

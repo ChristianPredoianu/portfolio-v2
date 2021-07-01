@@ -80,6 +80,10 @@ body {
       font-size: clamp(2rem, 2vw, 4rem);
       cursor: pointer;
 
+      &--github {
+        color: $color-primary;
+      }
+
       &--linkedin {
         color: #2867b2;
       }

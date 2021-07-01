@@ -27,12 +27,12 @@
   }
 
   &__icon {
-    font-size: clamp(2rem, 3vw, 3rem);
+    font-size: clamp(2rem, 2vw, 6rem);
     cursor: pointer;
     padding: 2rem;
     background-color: #000000;
     color: $color-secondary;
-    border-radius: 50%;
+    border-radius: 20%;
 
     @include respond(phone) {
       padding: 1.5rem;

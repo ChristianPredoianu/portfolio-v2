@@ -14,6 +14,10 @@
     width: 32rem;
     height: 35rem;
   }
+
+  @include respond(fold) {
+    width: 25rem;
+  }
 }
 
 .swiper-slide {
@@ -169,7 +173,7 @@
   &::after {
     @include respond(phone) {
       font-size: 3rem !important;
-      color: $color-orange !important;
+      color: #ffffff !important;
     }
   }
 
@@ -186,7 +190,7 @@
   &::after {
     @include respond(phone) {
       font-size: 3rem !important;
-      color: $color-orange !important;
+      color: #ffffff !important;
     }
   }
 
@@ -204,5 +208,6 @@
 }
 
 .swiper-pagination-bullet {
-  background-color: $color-primary !important;
+  background-color: #030181 !important;
+  cursor: pointer !important;
 }

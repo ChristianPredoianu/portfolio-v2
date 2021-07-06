@@ -8,6 +8,7 @@ body {
   @include textUppercaseSpacing($letterSpacing: 2rem);
   @include headings;
   font-size: clamp(1.8rem, 2vw, 8rem);
+  margin-left: 1rem;
 }
 
 .heading-secondary {
@@ -42,10 +43,7 @@ body {
   &__paragraph {
     font-size: clamp(1.5rem, 1.2vw, 3rem);
     margin-top: -10rem;
-
-    @include respond(phone) {
-      line-height: normal;
-    }
+    line-height: 3.5rem;
 
     @include respond(tab-port) {
       margin-top: 10rem;

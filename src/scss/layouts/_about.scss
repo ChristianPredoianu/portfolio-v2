@@ -71,7 +71,24 @@
 }
 
 .container-tech {
-  @include flex-config($display: flex, $justify: space-between, $wrap: wrap);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: 1fr;
+  grid-gap: 5rem;
+  padding: 0 10rem;
+
+  @include respond(tab-land) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include respond(tab-port) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include respond(phone) {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 3rem;
+  }
 }
 
 .tech-icons-container {
@@ -82,17 +99,15 @@
     $justify: space-around
   );
   box-shadow: 6px 2px 18px 5px rgba(0, 0, 0, 0.1);
-  padding: 3rem 7rem;
-  flex: 1;
-  margin: 2rem;
+  padding: 6rem;
 
   &__icon {
     @include icons;
-    font-size: clamp(4rem, 2vw, 7rem);
+    font-size: clamp(3rem, 2vw, 5rem);
   }
 
   &__paragraph {
-    font-size: clamp(1.3rem, 0.5vw, 2rem);
+    font-size: 1.5rem;
     margin-top: 1.5rem;
     text-align: center;
     font-weight: 700;

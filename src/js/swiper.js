@@ -7,7 +7,7 @@ SwiperCore.use([Navigation, Pagination, EffectCube]);
 const swiper = new Swiper('.mySwiper', {
   effect: 'cube',
   speed: 1500,
-  grabCursor: true,
+  /*  grabCursor: true, */
   cubeEffect: {
     shadow: true,
     slideShadows: true,
@@ -16,6 +16,8 @@ const swiper = new Swiper('.mySwiper', {
   },
   pagination: {
     el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true,
   },
   navigation: {
     nextEl: '.swiper-button-next',

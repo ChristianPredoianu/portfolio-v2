@@ -56,7 +56,7 @@ if (!hasAnimationPlayed) {
   tl.from('.animated', {
     y: -50,
     stagger: 0.6,
-    opacity: 0,
+    autoAlpha: 0,
     onComplete: () => {
       sessionStorage.setItem('isHeroAnimated', true);
       animationEnded();
@@ -81,6 +81,7 @@ if (!isIconsRevealed) {
     duration: 2,
     ease: 'none',
     stagger: 0.2,
+    autoAlpha: 1,
     opacity: 1,
     onComplete: () => {
       sessionStorage.setItem('isIconsRevealed', true);
@@ -97,10 +98,9 @@ if (!isIconsRevealed) {
 function hoverOnCta() {
   const cta = document.querySelector('.welcome-section__cta');
   const hover = gsap.to('.welcome-section__cta', {
-    y: -3,
     scale: 1.01,
-    duration: 0.2,
-    paused: true,
+    duration: 0.1,
+    x: 1,
   });
 
   hoverAnimationPlay(cta, hover);
@@ -110,4 +110,8 @@ function hoverOnCta() {
 function animationEnded() {
   hoverOnCta();
   hoverOnSocialIcons(socialIcons);
+  const animatedElements = document.querySelectorAll('.animated');
+  animatedElements.forEach((animatedElement) => {
+    animatedElement.style.visibility = 'visible';
+  });
 }

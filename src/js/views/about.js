@@ -3,7 +3,6 @@ import Typed from 'typed.js';
 import { aboutHeadingOptions } from '../typedOptions';
 import { gsap } from 'gsap';
 import { CSSRulePlugin } from 'gsap/CSSRulePlugin';
-gsap.registerPlugin(CSSRulePlugin);
 
 import '@fortawesome/fontawesome-free/css/brands.css';
 import '@fortawesome/fontawesome-free/css/solid.css';
@@ -17,6 +16,7 @@ if (!isTypedAbout) {
   document.querySelector('.about-typed').innerText = 'About Me';
 }
 
+gsap.registerPlugin(CSSRulePlugin);
 const imgBefore = CSSRulePlugin.getRule('.img-container::before');
 const imgAfter = CSSRulePlugin.getRule('.img-container::after');
 

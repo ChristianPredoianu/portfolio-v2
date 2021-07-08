@@ -14,6 +14,7 @@
     border-width: 5px;
     border-style: solid;
     border-image: linear-gradient(to right, rgb(2, 29, 80), rgba(0, 0, 0, 0)) 1;
+    visibility: hidden;
   }
 }
 
@@ -33,6 +34,7 @@
     background-color: #000000;
     color: $color-secondary;
     border-radius: 20%;
+    visibility: hidden;
 
     @include respond(phone) {
       padding: 1.5rem;
@@ -42,6 +44,7 @@
 
 .contact-info-img {
   width: 30%;
+  visibility: hidden;
 
   @include respond(phone) {
     width: 50%;

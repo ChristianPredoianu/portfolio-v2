@@ -53,7 +53,7 @@ const isIconsRevealed = sessionStorage.getItem('isIconsRevealed');
 const socialIcons = document.querySelectorAll('.social-icons__icon');
 
 if (!hasAnimationPlayed) {
-  tl.from('.animated', {
+  tl.add('start').from('.animated', {
     y: -50,
     stagger: 0.6,
     autoAlpha: 0,
@@ -77,16 +77,20 @@ tl.to('.icons__icon', {
 });
 
 if (!isIconsRevealed) {
-  tl.to('.container-right__icon', {
-    duration: 2,
-    ease: 'none',
-    stagger: 0.2,
-    autoAlpha: 1,
-    opacity: 1,
-    onComplete: () => {
-      sessionStorage.setItem('isIconsRevealed', true);
+  tl.to(
+    '.container-right__icon',
+    {
+      duration: 2,
+      ease: 'none',
+      stagger: 0.2,
+      autoAlpha: 1,
+      opacity: 1,
+      onComplete: () => {
+        sessionStorage.setItem('isIconsRevealed', true);
+      },
     },
-  });
+    'start'
+  );
 } else {
   const icons = document.querySelectorAll('.container-right__icon');
   icons.forEach((icon) => {
@@ -100,7 +104,6 @@ function hoverOnCta() {
   const hover = gsap.to('.welcome-section__cta', {
     scale: 1.01,
     duration: 0.1,
-    x: 1,
   });
 
   hoverAnimationPlay(cta, hover);

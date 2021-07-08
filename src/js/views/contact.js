@@ -35,9 +35,9 @@ const socialIconsContact = document.querySelectorAll('.contact-info__icon');
 tl.add('start').to(
   borderBefore,
   {
-    duration: 0.8,
     cssRule: {
       width: '30%',
+      autoAlpha: 1,
     },
   },
   'start'
@@ -49,6 +49,7 @@ tl.from(
     opacity: 0,
     stagger: 0.3,
     x: -10,
+    autoAlpha: 0,
   },
   'start'
 );
@@ -56,9 +57,8 @@ tl.from(
 tl.from(
   '.contact-info-img',
   {
-    duration: 2,
     y: -40,
-    opacity: 0,
+    autoAlpha: 0,
     onComplete: animationEnded,
   },
   'start'

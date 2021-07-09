@@ -7,7 +7,6 @@ body {
 
 .projects-main {
   @include flex-config($display: flex, $justify: space-around, $align: center);
-  color: $color-primary;
   padding: 0 0 32rem 0;
 
   @include respond(tab-land) {

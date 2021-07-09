@@ -14,7 +14,7 @@ nav {
   }
 
   a {
-    color: $color-primary;
+    color: inherit;
   }
 }
 
@@ -29,6 +29,60 @@ nav {
     font-size: clamp(1.2rem, 0.6vw, 2.5rem);
     text-align: center;
     font-style: italic;
+  }
+}
+
+/*slider switch css */
+.theme-switch-wrapper {
+  @include flex-config($display: flex, $direction: column, $align: center);
+
+  em {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+}
+
+.theme-switch {
+  display: inline-block;
+  position: relative;
+  width: 6rem;
+  height: 3.4rem;
+
+  &__input {
+    display: none;
+
+    &:checked + {
+      .slider {
+        background-color: #66bb6a;
+
+        &::before {
+          transform: translateX(2.6rem);
+        }
+      }
+    }
+  }
+}
+
+.slider {
+  @include position($pos: absolute, $top: 0, $right: 0, $bottom: 0, $left: 0);
+  background-color: #ccc;
+  cursor: pointer;
+  transition: 0.4s;
+
+  &::before {
+    @include pseudo($bottom: 0.4rem, $left: 0.4rem);
+    width: 2.6rem;
+    height: 2.6rem;
+    background-color: #fff;
+    transition: 0.4s;
+  }
+}
+
+.slider.round {
+  border-radius: 3.4rem;
+
+  &::before {
+    border-radius: 50%;
   }
 }
 
@@ -47,7 +101,7 @@ nav {
     );
 
     @include position($pos: fixed, $top: 0, $left: 0);
-    background: #080e29;
+    background: var(--mobile-links-background);
     height: 100vh;
     width: 100vw;
     z-index: 5;
@@ -56,23 +110,18 @@ nav {
 
   a {
     display: inline-block;
-
     position: relative;
 
     &::before {
       @include pseudo($bottom: -30%, $left: 0);
-      border: 2px solid rgb(10, 2, 165);
+      border: 2px solid var(--foreground);
       width: 0;
       opacity: 0;
       transition: all 0.5s ease;
     }
 
     &:hover {
-      background: linear-gradient(
-        90deg,
-        rgb(10, 2, 165) 0%,
-        rgb(133, 132, 132) 100%
-      );
+      background: var(--gradient);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -102,7 +151,7 @@ nav {
 
   &__line {
     @include respond(tab-port) {
-      background: #0b16a8;
+      background: var(--hamburger);
       width: 3rem;
       height: 0.3rem;
       margin: 0.5rem;

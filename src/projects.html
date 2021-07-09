@@ -41,6 +41,13 @@
             <p class="logo__subheading">front end developer</p>
           </a>
         </div>
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" class="theme-switch__input" />
+            <div class="slider round"></div>
+          </label>
+          <em>Enable Dark Mode!</em>
+        </div>
         <div class="hamburger" id="hamburger">
           <div class="hamburger__line"></div>
           <div class="hamburger__line"></div>
@@ -100,7 +107,12 @@
           </div>
 
           <!--Slide Two-->
-          <div class="swiper-slide swiper-slide--two">
+          <div
+            class="swiper-slide swiper-slide--two swiper-lazy"
+            data-background="../assets/images/briefcase.jpg"
+          >
+            <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
+
             <div class="swiper-slide-container">
               <div>
                 <h3 class="swiper-slide-container__project-name">

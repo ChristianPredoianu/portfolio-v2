@@ -3,3 +3,28 @@ $color-secondary: #f1f1f1;
 
 $color-green: #74fc62;
 $color-orange: #ffae00;
+
+:root {
+  --clr-light: #f1f1f1;
+  --clr-dark: #000000;
+  --clr-tertiary: #0000ff;
+  --clr-accent: rgb(3, 3, 0);
+  --clr-gradient-light-mode: linear-gradient(
+    90deg,
+    rgb(10, 2, 165) 0%,
+    rgb(133, 132, 132) 100%
+  );
+
+  --clr-gradient-dark-mode: linear-gradient(
+    90deg,
+    rgb(221, 221, 226) 0%,
+    rgb(133, 132, 132) 100%
+  );
+
+  --foreground: var(--clr-dark);
+  --background: var(--clr-light);
+
+  --gradient: var(--clr-gradient-light-mode);
+  --hamburger: var(--clr-tertiary);
+  --mobile-links-background: var(--clr-accent);
+}

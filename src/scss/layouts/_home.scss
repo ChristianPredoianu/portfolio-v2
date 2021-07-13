@@ -130,10 +130,7 @@ body {
     height: 25%;
     border-width: 5px;
     border-style: solid;
-    border-image: /* linear-gradient(to bottom, rgb(2, 29, 80), rgba(0, 0, 0, 0)) 1
-      100%; */ var(
-      --pseudo-el-gradient
-    );
+    border-image: var(--pseudo-el-gradient-bottom);
   }
 
   &__icon {

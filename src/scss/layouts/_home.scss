@@ -30,20 +30,12 @@ body {
   margin-top: -20rem;
   width: 100%;
 
-  a {
-    color: $color-secondary;
-  }
-
   &__cta {
     display: inline-block;
     font-size: clamp(1.2rem, 1vw, 3rem);
     background: rgb(2, 0, 36);
-    background: linear-gradient(
-      90deg,
-      rgba(2, 0, 36, 1) 0%,
-      rgba(56, 55, 79, 1) 100%,
-      rgba(194, 194, 194, 1) 100%
-    );
+    background: var(--cta-background);
+    color: var(--cta-clr);
     margin-top: 2rem;
     padding: 2rem 4rem;
     @include textUppercaseSpacing($letterSpacing: 0.4rem);
@@ -88,7 +80,7 @@ body {
       cursor: pointer;
 
       &--github {
-        color: $color-primary;
+        color: var(--foreground);
       }
 
       &--linkedin {
@@ -138,8 +130,10 @@ body {
     height: 25%;
     border-width: 5px;
     border-style: solid;
-    border-image: linear-gradient(to bottom, rgb(2, 29, 80), rgba(0, 0, 0, 0)) 1
-      100%;
+    border-image: /* linear-gradient(to bottom, rgb(2, 29, 80), rgba(0, 0, 0, 0)) 1
+      100%; */ var(
+      --pseudo-el-gradient
+    );
   }
 
   &__icon {

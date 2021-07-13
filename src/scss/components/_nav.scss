@@ -101,7 +101,7 @@ nav {
     );
 
     @include position($pos: fixed, $top: 0, $left: 0);
-    background: var(--mobile-links-background);
+    background: var(--mobile-nav-background);
     height: 100vh;
     width: 100vw;
     z-index: 5;
@@ -121,7 +121,7 @@ nav {
     }
 
     &:hover {
-      background: var(--gradient);
+      background: var(--gradient-nav-links);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;

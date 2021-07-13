@@ -13,5 +13,9 @@ body {
   --hamburger: var(--clr-light);
   --cta-clr: var(--clr-dark);
   --cta-background: var(--cta-gradient-light);
-  --pseudo-el-gradient: var(--pseudo-el-clr-light);
+  --pseudo-el-gradient-bottom: var(--pseudo-el-clr-light-bottom);
+  --pseudo-el-gradient-right: var(--pseudo-el-clr-light-right);
+  --swiper-nav-clr: var(--clr-tertiary);
+  --box-shadow: var(--box-shadow-light);
+  --social-icons: var(--clr-tertiary);
 }

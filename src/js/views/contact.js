@@ -1,7 +1,6 @@
 import nav from '../nav';
 import Typed from 'typed.js';
 import gsap from 'gsap';
-import { CSSRulePlugin } from 'gsap/CSSRulePlugin';
 import { contactHeadingOptions } from '../typedOptions';
 import { hoverOnSocialIcons } from '../socialIconsAnimation';
 import { library, dom } from '@fortawesome/fontawesome-svg-core';
@@ -26,24 +25,12 @@ if (!isTypedContact) {
 ///////////////////////////////////////////////////////////
 
 //////////////////////GSAP/////////////////////////////////
-gsap.registerPlugin(CSSRulePlugin);
 
 const tl = gsap.timeline({ defaults: { duration: 1 } });
-const borderBefore = CSSRulePlugin.getRule('.section-contact::before');
+
 const socialIconsContact = document.querySelectorAll('.contact-info__icon');
 
-tl.add('start').to(
-  borderBefore,
-  {
-    cssRule: {
-      width: '30%',
-      autoAlpha: 1,
-    },
-  },
-  'start'
-);
-
-tl.from(
+tl.add('start').from(
   '.contact-info__icon',
   {
     opacity: 0,

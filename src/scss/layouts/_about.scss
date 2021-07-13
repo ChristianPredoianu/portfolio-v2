@@ -98,7 +98,7 @@
     $align: center,
     $justify: space-around
   );
-  box-shadow: 6px 2px 18px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--box-shadow);
   padding: 6rem;
 
   &__icon {

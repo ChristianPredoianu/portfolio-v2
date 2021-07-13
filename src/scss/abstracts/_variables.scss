@@ -8,23 +8,50 @@ $color-orange: #ffae00;
   --clr-light: #f1f1f1;
   --clr-dark: #000000;
   --clr-tertiary: #0000ff;
-  --clr-accent: rgb(3, 3, 0);
-  --clr-gradient-light-mode: linear-gradient(
+
+  --clr-gradient-links-light: linear-gradient(
     90deg,
     rgb(10, 2, 165) 0%,
     rgb(133, 132, 132) 100%
   );
-
-  --clr-gradient-dark-mode: linear-gradient(
+  --clr-gradient-links-dark: linear-gradient(
     90deg,
     rgb(221, 221, 226) 0%,
     rgb(133, 132, 132) 100%
   );
+  --cta-gradient-dark: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(56, 55, 79, 1) 100%,
+    rgba(194, 194, 194, 1) 100%
+  );
+  --cta-gradient-light: linear-gradient(
+    90deg,
+    rgb(255, 255, 255) 0%,
+    rgb(144, 144, 247) 100%,
+    rgba(194, 194, 194, 1) 100%
+  );
+  --pseudo-el-clr-dark: linear-gradient(
+      to bottom,
+      rgb(2, 29, 80),
+      rgba(0, 0, 0, 0)
+    )
+    1 100%;
+
+  --pseudo-el-clr-light: linear-gradient(
+      to bottom,
+      rgb(240, 240, 240),
+      rgb(144, 144, 247) 100%
+    )
+    1 100%;
 
   --foreground: var(--clr-dark);
   --background: var(--clr-light);
 
-  --gradient: var(--clr-gradient-light-mode);
+  --gradient-nav-links: var(--clr-gradient-links-light);
+  --mobile-nav-background: var(--clr-dark);
   --hamburger: var(--clr-tertiary);
-  --mobile-links-background: var(--clr-accent);
+  --cta-clr: var(--clr-light);
+  --cta-background: var(--cta-gradient-dark);
+  --pseudo-el-gradient: var(--pseudo-el-clr-dark);
 }

@@ -5,9 +5,12 @@ $color-green: #74fc62;
 $color-orange: #ffae00;
 
 :root {
+  --clr-primary: #252525;
+  --clr-secondary: #f1f1f1;
+  --clr-tertiary: #3a3aad;
+
   --clr-light: #f1f1f1;
   --clr-dark: #000000;
-  --clr-tertiary: #0000ff;
 
   --clr-gradient-links-light: linear-gradient(
     90deg,
@@ -31,19 +34,36 @@ $color-orange: #ffae00;
     rgb(144, 144, 247) 100%,
     rgba(194, 194, 194, 1) 100%
   );
-  --pseudo-el-clr-dark: linear-gradient(
+  --pseudo-el-clr-dark-bottom: linear-gradient(
       to bottom,
       rgb(2, 29, 80),
       rgba(0, 0, 0, 0)
     )
     1 100%;
 
-  --pseudo-el-clr-light: linear-gradient(
+  --pseudo-el-clr-light-bottom: linear-gradient(
       to bottom,
       rgb(240, 240, 240),
       rgb(144, 144, 247) 100%
     )
     1 100%;
+
+  --pseudo-el-clr-dark-right: linear-gradient(
+      to right,
+      rgb(2, 29, 80),
+      rgba(0, 0, 0, 0)
+    )
+    1;
+
+  --pseudo-el-clr-light-right: linear-gradient(
+      to right,
+      rgb(240, 240, 240),
+      rgb(144, 144, 247) 100%
+    )
+    1;
+
+  --box-shadow-dark: 6px 2px 18px 5px rgba(0, 0, 0, 0.1);
+  --box-shadow-light: 6px 2px 18px 5px rgba(255, 255, 255, 0.1);
 
   --foreground: var(--clr-dark);
   --background: var(--clr-light);
@@ -53,5 +73,9 @@ $color-orange: #ffae00;
   --hamburger: var(--clr-tertiary);
   --cta-clr: var(--clr-light);
   --cta-background: var(--cta-gradient-dark);
-  --pseudo-el-gradient: var(--pseudo-el-clr-dark);
+  --pseudo-el-gradient-bottom: var(--pseudo-el-clr-dark-bottom);
+  --pseudo-el-gradient-right: var(--pseudo-el-clr-dark-right);
+  --swiper-nav-clr: var(--clr-primary);
+  --box-shadow: var(--box-shadow-dark);
+  --social-icons: var(--clr-secondary);
 }

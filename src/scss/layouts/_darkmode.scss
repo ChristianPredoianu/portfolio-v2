@@ -9,6 +9,9 @@ body {
   --foreground: var(--clr-light);
   --background: var(--clr-dark);
 
-  --gradient: var(--clr-gradient-dark-mode);
+  --gradient-nav-links: var(--clr-gradient-links-dark);
   --hamburger: var(--clr-light);
+  --cta-clr: var(--clr-dark);
+  --cta-background: var(--cta-gradient-light);
+  --pseudo-el-gradient: var(--pseudo-el-clr-light);
 }

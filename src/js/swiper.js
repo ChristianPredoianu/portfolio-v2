@@ -1,13 +1,21 @@
 import Swiper from 'swiper';
-import SwiperCore, { Navigation, Pagination, EffectCube } from 'swiper/core';
+import SwiperCore, {
+  Navigation,
+  Pagination,
+  EffectCube,
+  Lazy,
+} from 'swiper/core';
 import 'swiper/swiper-bundle.css';
 
-SwiperCore.use([Navigation, Pagination, EffectCube]);
+SwiperCore.use([Navigation, Pagination, EffectCube, Lazy]);
 
 const swiper = new Swiper('.mySwiper', {
   effect: 'cube',
   speed: 1500,
-  /*  grabCursor: true, */
+  preloadImages: false,
+  lazy: true,
+  watchSlidesVisibility: true,
+
   cubeEffect: {
     shadow: true,
     slideShadows: true,

@@ -7,9 +7,8 @@ $color-orange: #ffae00;
 :root {
   --clr-primary: #252525;
   --clr-secondary: #f1f1f1;
-  --clr-tertiary: #3a3aad;
+  --clr-tertiary: #4040eb;
 
-  --clr-light: #f1f1f1;
   --clr-dark: #000000;
 
   --clr-gradient-links-light: linear-gradient(
@@ -65,13 +64,13 @@ $color-orange: #ffae00;
   --box-shadow-dark: 6px 2px 18px 5px rgba(0, 0, 0, 0.1);
   --box-shadow-light: 6px 2px 18px 5px rgba(255, 255, 255, 0.1);
 
-  --foreground: var(--clr-dark);
-  --background: var(--clr-light);
+  --foreground: var(--clr-primary);
+  --background: var(--clr-secondary);
 
   --gradient-nav-links: var(--clr-gradient-links-light);
   --mobile-nav-background: var(--clr-dark);
   --hamburger: var(--clr-tertiary);
-  --cta-clr: var(--clr-light);
+  --cta-clr: var(--clr-secondary);
   --cta-background: var(--cta-gradient-dark);
   --pseudo-el-gradient-bottom: var(--pseudo-el-clr-dark-bottom);
   --pseudo-el-gradient-right: var(--pseudo-el-clr-dark-right);

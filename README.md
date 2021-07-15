@@ -2,21 +2,21 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/ChristianPredoianu/covid-trackerV2/">
+  <a href="https://github.com/ChristianPredoianu/portfolio-v2">
     <img src="src/assets/images/briefcase.jpg" alt="Logo" width="100" height="80">
   </a>
 
-  <h3 align="center">Crypto info</h3>
+  <h3 align="center">Portfolio Christian Predoianu</h3>
 
   <p align="center">
-   A crypto info app made with Nuxt.js
+   My portfolio
     <br />
-    <a href="https://github.com/ChristianPredoianu/nuxt-crypto-currency-v2"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/ChristianPredoianu/portfolio-v2"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://nuxtcryptov2.netlify.app/">View Demo</a>
+    <a href="https://christianpredoianu.com/">View Demo</a>
     ·
-    <a href="https://github.com/ChristianPredoianu/nuxt-crypto-currency-v2/issues/issues">Report Bug</a>
+    <a href="https://github.com/ChristianPredoianu/portfolio-v2/issues">Report Bug</a>
     ·
    
   </p>
@@ -53,12 +53,18 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This project is made to show exchange and info about cryptocurrencies.
+My front end portfolio.
 
 ### Built With
 
-* [Nuxt.js](https://nuxtjs.org/)
-* [TailwindCSS](https://tailwindcss.com/)
+* [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)
+* [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [Vanilla Js](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* [Sass](https://sass-lang.com/)
+* [Parcel](https://parceljs.org/)
+* [Gsap](https://greensock.com/)
+* [BEM](http://getbem.com/)
+* [Local Storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
 
 
 
@@ -78,31 +84,24 @@ To get a local copy up and running follow these simple steps.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/ChristianPredoianu/nuxt-crypto-currency-v2.git
+   git clone https://github.com/ChristianPredoianu/portfolio-v2.git
    ```
 2. Install NPM packages
    ```sh
    npm install
    ``` 
-3. cd into folder
-   ```sh
-   cd nuxt-crypto
-   ``` 
-4. serve with hot reload at localhost:3000
+3. serve with hot reload at localhost:1234
    ```sh
     npm run dev
    ``` 
-5. build for production and launch server
+5. build for production 
    ```sh
     npm run build
-    npm run start
-   ```
-6. generate static project
-   ```sh
-    npm run generate
-   ```    
    
-   For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+   ```
+
+   
+
    
    
    
@@ -114,8 +113,8 @@ To get a local copy up and running follow these simple steps.
 To start using Crypto info:
 
 1. Choose prefered color mode. Light mode or dark mode.
-2. Navigate to 'Exchange' to see the exchange courses.
-3. Navigate to 'Currency info' to see more info about different cryptocurrencies.
+2. Navigate.
+
  
 
 
@@ -137,9 +136,9 @@ Project Link: [https://github.com/ChristianPredoianu/portfolio-v2](https://githu
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 * [Google Fonts](https://fonts.google.com/)
-* [Axios](https://github.com/axios/axios)
+* [Swiper.js](https://swiperjs.com/)
 * [Font-Awesome](https://fontawesome.com/)
-* [Nomics API](https://nomics.com/docs/)
+* [Typed.js](https://github.com/mattboldt/typed.js/)
 
 
 

@@ -16,15 +16,11 @@ dom.watch();
 
 const isTypedContact = sessionStorage.getItem('isTypedContact');
 
-//////////////////////////Typed.js//////////////////////////
 if (!isTypedContact) {
   const headingTyped = new Typed('.contact-typed', contactHeadingOptions);
 } else {
   document.querySelector('.contact-typed').innerText = 'Contact Me';
 }
-///////////////////////////////////////////////////////////
-
-//////////////////////GSAP/////////////////////////////////
 
 const tl = gsap.timeline({ defaults: { duration: 1 } });
 
@@ -54,4 +50,3 @@ tl.from(
 function animationEnded() {
   hoverOnSocialIcons(socialIconsContact);
 }
-//////////////////////////////////

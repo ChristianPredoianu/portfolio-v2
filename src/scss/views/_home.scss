@@ -16,7 +16,7 @@ body {
 }
 
 .container-left {
-  @include flex-config($display: flex, $align: center);
+  @include flex-config($align: center);
   grid-area: cont-left;
   min-height: 90vh;
 }
@@ -27,7 +27,7 @@ body {
 
 .welcome-section {
   position: relative;
-  margin-top: -20rem;
+  margin-top: -10rem;
   width: 100%;
 
   &__cta {
@@ -99,7 +99,7 @@ body {
 
 .icons {
   @include position($pos: absolute, $bottom: 2rem);
-  @include flex-config($display: flex, $justify: space-around);
+  @include flex-config($justify: space-around);
   width: 75vw;
 
   @include respond(tab-port) {
@@ -116,7 +116,6 @@ body {
 .container-right {
   grid-area: cont-right;
   @include flex-config(
-    $display: flex,
     $direction: column,
     $justify: space-around,
     $align: center
@@ -128,7 +127,7 @@ body {
   &::before {
     @include pseudo($top: 0, $left: -5%);
     height: 25%;
-    border-width: 5px;
+    border-left-width: 7px;
     border-style: solid;
     border-image: var(--pseudo-el-gradient-bottom);
   }

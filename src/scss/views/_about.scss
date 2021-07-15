@@ -1,7 +1,7 @@
 @use 'abstracts' as *;
 
 .about-me {
-  @include flex-config($display: flex, $justify: space-around, $align: center);
+  @include flex-config($justify: space-around, $align: center);
   margin: 30rem auto 20rem auto;
 
   @include respond(tab-port) {
@@ -93,7 +93,6 @@
 
 .tech-icons-container {
   @include flex-config(
-    $display: flex,
     $direction: column,
     $align: center,
     $justify: space-around

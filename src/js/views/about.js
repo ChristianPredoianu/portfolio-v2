@@ -4,12 +4,55 @@ import { aboutHeadingOptions } from '../typedOptions';
 import { gsap } from 'gsap';
 import { CSSRulePlugin } from 'gsap/CSSRulePlugin';
 
-import '@fortawesome/fontawesome-free/css/brands.css';
-import '@fortawesome/fontawesome-free/css/solid.css';
+import { library, dom } from '@fortawesome/fontawesome-svg-core';
+import {
+  faGithub,
+  faLinkedinIn,
+  faHtml5,
+  faCss3Alt,
+  faJsSquare,
+  faVuejs,
+  faSass,
+  faFigma,
+  faBootstrap,
+  faNpm,
+} from '@fortawesome/free-brands-svg-icons';
+import {
+  faTerminal,
+  faTools,
+  faMobile,
+  faCode,
+  faWind,
+  faBoxOpen,
+  faBox,
+} from '@fortawesome/free-solid-svg-icons';
+
+library.add(
+  faGithub,
+  faLinkedinIn,
+  faHtml5,
+  faCss3Alt,
+  faJsSquare,
+  faVuejs,
+  faSass,
+  faFigma,
+  faBootstrap,
+  faTerminal,
+  faTools,
+  faMobile,
+  faCode,
+  faWind,
+  faBoxOpen,
+  faBox,
+  faNpm
+);
+
+dom.watch();
 import '@fortawesome/fontawesome-free/css/fontawesome.css';
 
 const isTypedAbout = sessionStorage.getItem('isTypedAbout');
 
+//If heading is not typed, type the heading. Else just show the heading
 if (!isTypedAbout) {
   const aboutHeadingTyped = new Typed('.about-typed', aboutHeadingOptions);
 } else {

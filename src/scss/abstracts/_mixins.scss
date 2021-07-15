@@ -4,15 +4,16 @@
 //-------------------------------------------------------------------
 
 @mixin flex-config(
-  $display: false,
+  $display: flex,
   $wrap: false,
   $direction: false,
   $justify: false,
   $align: false
 ) {
-  @if $display != false {
+  /*  @if $display != false {
     display: $display;
-  }
+  } */
+  display: $display;
 
   @if $wrap !=false {
     flex-wrap: $wrap;
@@ -235,8 +236,8 @@ $breakpoint argument choices
   }
 
   @if $breakpoint == big-desktop {
-    @media (min-width: 120em) {
-      //1920px
+    @media (min-width: 112.5em) {
+      //1800px
       @content;
     }
   }

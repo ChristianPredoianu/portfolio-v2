@@ -8,10 +8,6 @@
     <title>Christian Predoianu | Contact</title>
     <link rel="stylesheet" href="scss/main.scss" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
       rel="icon"
       type="image/png"
       href="./assets/images/favicon-32x32.png"
@@ -23,6 +19,31 @@
       href="./assets/images/favicon-16x16.png"
       sizes="16x16"
     />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+      />
+    </noscript>
     <script src="js/views/contact.js" defer></script>
   </head>
   <body>
@@ -39,7 +60,7 @@
             <input type="checkbox" id="checkbox" class="theme-switch__input" />
             <div class="slider round"></div>
           </label>
-          <em>Enable Dark Mode!</em>
+          <p class="theme-switch-wrapper__paragraph">Dark Mode</p>
         </div>
         <div class="hamburger" id="hamburger">
           <div class="hamburger__line"></div>

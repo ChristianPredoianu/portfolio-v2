@@ -6,11 +6,11 @@ body {
 }
 
 .darkmode {
-  --foreground: var(--clr-light);
+  --foreground: var(--clr-secondary);
   --background: var(--clr-dark);
 
   --gradient-nav-links: var(--clr-gradient-links-dark);
-  --hamburger: var(--clr-light);
+  --hamburger: var(--clr-tertiary);
   --cta-clr: var(--clr-dark);
   --cta-background: var(--cta-gradient-light);
   --pseudo-el-gradient-bottom: var(--pseudo-el-clr-light-bottom);

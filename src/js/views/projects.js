@@ -17,6 +17,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import '@fortawesome/fontawesome-free/css/fontawesome.css';
 
 library.add(faFacebook, faGithub, faLinkedinIn, faEnvelope);
+
 dom.watch();
 
 const isTypedProjects = sessionStorage.getItem('isTypedProjects');

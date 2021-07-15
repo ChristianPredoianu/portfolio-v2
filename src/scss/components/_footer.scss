@@ -2,22 +2,22 @@
 
 footer {
   @include position($pos: absolute, $bottom: 0);
-  @include flex-config($display: flex, $direction: column, $align: center);
+  @include flex-config($direction: column, $align: center);
   width: 100%;
   background-color: #0a0a0a;
 }
 
 .footer-icons {
+  @include flex-config($justify: space-around);
   width: 50%;
-  @include flex-config($display: flex, $justify: space-around);
   font-size: clamp(1.8rem, 1vw, 3rem);
+  color: var(--clr-secondary);
   padding: 2rem 0;
-  color: $color-secondary;
 
   &__icon {
     transition: all 0.2s ease;
     cursor: pointer;
-    color: $color-secondary;
+    color: var(--social-icons);
     opacity: 0.5;
 
     &:hover {

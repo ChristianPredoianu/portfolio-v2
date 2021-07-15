@@ -1,16 +1,16 @@
 @use 'abstracts' as *;
 
 nav {
-  @include flex-config($display: flex, $justify: space-between, $align: center);
+  @include flex-config($justify: space-between, $align: center);
   height: 10vh;
-  padding: 0 6rem;
-
-  @include respond(tab-port) {
-    padding: 0 3rem;
-  }
+  padding: 4rem 3rem;
 
   @include respond(phone) {
     padding: 1.5rem;
+  }
+
+  @include respond(fold) {
+    padding: 1rem;
   }
 
   a {
@@ -23,6 +23,14 @@ nav {
     font-size: clamp(1.2rem, 0.8vw, 4rem);
     text-transform: uppercase;
     letter-spacing: 0.2rem;
+
+    @include respond(phone) {
+      letter-spacing: 0.1rem;
+    }
+
+    @include respond(fold) {
+      letter-spacing: 0;
+    }
   }
 
   &__subheading {
@@ -34,11 +42,11 @@ nav {
 
 /*slider switch css */
 .theme-switch-wrapper {
-  @include flex-config($display: flex, $direction: column, $align: center);
+  @include flex-config($direction: column, $align: center);
 
-  em {
-    margin-top: 0.5rem;
+  &__paragraph {
     font-size: 1rem;
+    margin-top: 0.5rem;
   }
 }
 
@@ -47,6 +55,11 @@ nav {
   position: relative;
   width: 6rem;
   height: 3.4rem;
+
+  @include respond(phone) {
+    width: 5.5rem;
+    height: 2.5rem;
+  }
 
   &__input {
     display: none;
@@ -75,6 +88,12 @@ nav {
     height: 2.6rem;
     background-color: #fff;
     transition: 0.4s;
+
+    @include respond(phone) {
+      width: 2rem;
+      height: 2rem;
+      bottom: 0.3rem;
+    }
   }
 }
 
@@ -87,7 +106,7 @@ nav {
 }
 
 .nav-links {
-  @include flex-config($display: flex, $justify: space-around);
+  @include flex-config($justify: space-around);
   @include textUppercaseSpacing($letterSpacing: 0.2rem);
   width: 50%;
   font-size: clamp(1.5rem, 0.9vw, 5rem);
@@ -114,10 +133,10 @@ nav {
 
     &::before {
       @include pseudo($bottom: -30%, $left: 0);
-      border: 2px solid var(--foreground);
       width: 0;
-      opacity: 0;
+      border: 2px solid var(--foreground);
       transition: all 0.5s ease;
+      opacity: 0;
     }
 
     &:hover {
@@ -133,7 +152,7 @@ nav {
     }
 
     @include respond(tab-port) {
-      color: $color-secondary;
+      color: var(--clr-secondary);
     }
   }
 }

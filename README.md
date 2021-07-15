@@ -64,7 +64,7 @@ My front end portfolio.
 * [Parcel](https://parceljs.org/)
 * [Gsap](https://greensock.com/)
 * [BEM](http://getbem.com/)
-* [Local Storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
+* [Local Storage + Session Storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
 
 
 

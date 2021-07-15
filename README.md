@@ -90,11 +90,11 @@ To get a local copy up and running follow these simple steps.
    ```sh
    npm install
    ``` 
-3. serve with hot reload at localhost:1234
+3. Serve with hot reload at localhost:1234
    ```sh
     npm run dev
    ``` 
-5. build for production 
+5. Build for production 
    ```sh
     npm run build
    
@@ -110,7 +110,7 @@ To get a local copy up and running follow these simple steps.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-To start using Crypto info:
+
 
 1. Choose prefered color mode. Light mode or dark mode.
 2. Navigate.

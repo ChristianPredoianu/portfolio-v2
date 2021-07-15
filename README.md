@@ -3,7 +3,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/ChristianPredoianu/portfolio-v2">
-    <img src="/src/assets/images/briefcase.jpg
+    <img src="portfolio-v2/src/assets/images/briefcase.jpg
 " alt="Logo" width="60" height="80">
   </a>
 

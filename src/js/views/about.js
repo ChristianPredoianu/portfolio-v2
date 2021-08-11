@@ -7,6 +7,7 @@ import { CSSRulePlugin } from 'gsap/CSSRulePlugin';
 import { library, dom } from '@fortawesome/fontawesome-svg-core';
 import {
   faGithub,
+  faFacebook,
   faLinkedinIn,
   faHtml5,
   faCss3Alt,
@@ -25,10 +26,12 @@ import {
   faWind,
   faBoxOpen,
   faBox,
+  faEnvelope,
 } from '@fortawesome/free-solid-svg-icons';
 
 library.add(
   faGithub,
+  faFacebook,
   faLinkedinIn,
   faHtml5,
   faCss3Alt,
@@ -44,7 +47,8 @@ library.add(
   faWind,
   faBoxOpen,
   faBox,
-  faNpm
+  faNpm,
+  faEnvelope
 );
 
 dom.watch();

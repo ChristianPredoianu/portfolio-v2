@@ -133,7 +133,7 @@ Project Link: [https://github.com/ChristianPredoianu/portfolio-v2](https://githu
 
 
 
-<!-- ACKNOWLEDGEMENTS -->
+<!-- ACKNOWLEDGEMENTS --> 
 ## Acknowledgements
 * [Google Fonts](https://fonts.google.com/)
 * [Swiper.js](https://swiperjs.com/)

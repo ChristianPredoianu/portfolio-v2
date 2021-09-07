@@ -1,0 +1,76 @@
+:root {
+  --clr-primary: #252525;
+  --clr-secondary: #f1f1f1;
+  --clr-tertiary: #4040eb;
+
+  --clr-dark: #000000;
+  --clr-orange: #ffae00;
+  --clr-green: #74fc62;
+
+  --clr-gradient-links-light: linear-gradient(
+    90deg,
+    rgb(10, 2, 165) 0%,
+    rgb(133, 132, 132) 100%
+  );
+  --clr-gradient-links-dark: linear-gradient(
+    90deg,
+    rgb(221, 221, 226) 0%,
+    rgb(133, 132, 132) 100%
+  );
+  --cta-gradient-dark: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(56, 55, 79, 1) 100%,
+    rgba(194, 194, 194, 1) 100%
+  );
+  --cta-gradient-light: linear-gradient(
+    90deg,
+    rgb(255, 255, 255) 0%,
+    rgb(144, 144, 247) 100%,
+    rgba(194, 194, 194, 1) 100%
+  );
+  --pseudo-el-clr-dark-bottom: linear-gradient(
+      to bottom,
+      rgb(2, 29, 80),
+      rgba(0, 0, 0, 0)
+    )
+    1 100%;
+
+  --pseudo-el-clr-light-bottom: linear-gradient(
+      to bottom,
+      rgb(240, 240, 240),
+      rgb(144, 144, 247) 100%
+    )
+    1 100%;
+
+  --pseudo-el-clr-dark-right: linear-gradient(
+      to right,
+      rgb(2, 29, 80),
+      rgba(0, 0, 0, 0)
+    )
+    1;
+
+  --pseudo-el-clr-light-right: linear-gradient(
+      to right,
+      rgb(240, 240, 240),
+      rgb(144, 144, 247) 100%
+    )
+    1;
+
+  --box-shadow-dark: 6px 2px 18px 5px rgba(0, 0, 0, 0.1);
+  --box-shadow-light: 6px 2px 18px 5px rgba(255, 255, 255, 0.1);
+
+  --foreground: var(--clr-primary);
+  --background: var(--clr-secondary);
+
+  --gradient-nav-links: var(--clr-gradient-links-light);
+  --mobile-nav-background: var(--clr-dark);
+  --hamburger: var(--clr-tertiary);
+  --cta-clr: var(--clr-secondary);
+  --cta-background: var(--cta-gradient-dark);
+  --pseudo-el-gradient-bottom: var(--pseudo-el-clr-dark-bottom);
+  --pseudo-el-gradient-right: var(--pseudo-el-clr-dark-right);
+  --swiper-nav-clr: var(--clr-primary);
+  --box-shadow: var(--box-shadow-dark);
+  --social-icons: var(--clr-secondary);
+}

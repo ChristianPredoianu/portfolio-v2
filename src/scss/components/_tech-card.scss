@@ -1,0 +1,23 @@
+@use '../abstracts/' as *;
+
+.tech-icons-card {
+  @include flex-config(
+    $direction: column,
+    $align: center,
+    $justify: space-around
+  );
+  box-shadow: var(--box-shadow);
+  padding: 6rem;
+
+  &__icon {
+    @include icons;
+    font-size: clamp(3rem, 2vw, 5rem);
+  }
+
+  &__paragraph {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    font-weight: 700;
+  }
+}

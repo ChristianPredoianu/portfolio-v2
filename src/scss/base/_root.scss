@@ -1,4 +1,8 @@
+@use '../abstracts/' as *;
+
 :root {
+  /*----------------------Colors----------------------------*/
+
   --clr-primary: #252525;
   --clr-secondary: #f1f1f1;
   --clr-tertiary: #4040eb;
@@ -6,6 +10,8 @@
   --clr-dark: #000000;
   --clr-orange: #ffae00;
   --clr-green: #74fc62;
+
+  /*----------------------Dark Mode----------------------------*/
 
   --clr-gradient-links-light: linear-gradient(
     90deg,
@@ -73,4 +79,34 @@
   --swiper-nav-clr: var(--clr-primary);
   --box-shadow: var(--box-shadow-dark);
   --social-icons: var(--clr-secondary);
+
+  /*----------------------Spacings----------------------------*/
+
+  --heading-spacing: 20rem;
+
+  @include respond(xxl) {
+    --heading-spacing: 30rem;
+  }
+
+  @include respond(tab-land) {
+    --heading-spacing: 10rem;
+  }
+
+  @include respond(phone) {
+    --heading-spacing: 5rem;
+  }
+
+  --section-spacing: 20rem;
+
+  @include respond(xxl) {
+    --section-spacing: 30rem;
+  }
+
+  @include respond(tab-land) {
+    --section-spacing: 20rem;
+  }
+
+  @include respond(phone) {
+    --section-spacing: 5rem;
+  }
 }

@@ -70,8 +70,8 @@ const imgAfter = CSSRulePlugin.getRule('.img-container::after');
 gsap.to(imgBefore, {
   duration: 3,
   cssRule: {
-    y: -10,
-    x: 10,
+    y: 0,
+    x: -10,
     opacity: 0.9,
   },
   yoyo: true,

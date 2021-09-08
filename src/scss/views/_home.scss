@@ -7,10 +7,12 @@ body {
 
 .home-main {
   display: grid;
+  grid: repeat(1, 1fr) / repeat(3, auto);
   min-height: 90vh;
   grid-template-areas: 'cont-left cont-left cont-right';
 
   @include respond(tab-port) {
+    grid: repeat(1, 1fr) / repeat(1, 1fr);
     grid-template-areas: 'cont-left';
   }
 }
@@ -19,6 +21,8 @@ body {
   @include flex-config($align: center);
   grid-area: cont-left;
   min-height: 90vh;
+
+  width: 100%;
 }
 
 .animated {

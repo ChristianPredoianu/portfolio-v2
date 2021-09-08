@@ -4,50 +4,36 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.1;
+}
+
 .heading-primary {
   @include textUppercaseSpacing($letterSpacing: 2rem);
   @include headings;
   font-size: clamp(1.8rem, 2vw, 8rem);
-  margin-left: 1rem;
+  margin-top: var(--heading-spacing);
 }
 
 .heading-secondary {
   @include textUppercaseSpacing($letterSpacing: 1rem);
   @include headings;
-  font-size: clamp(1.5rem, 2vw, 8rem);
+  margin-top: var(--heading-spacing);
+  font-size: clamp(1.6rem, 2vw, 8rem);
 }
 
 .welcome-section {
   &__heading-primary {
     font-size: clamp(2.5rem, 2vw, 7rem);
     filter: drop-shadow(0.4rem 0.3rem 0.6rem rgb(184, 183, 183));
-    width: 100%;
   }
 
   &__heading-secondary {
     font-size: clamp(1.8rem, 1vw, 4rem);
     margin-bottom: 0.5rem;
     letter-spacing: 0.5rem;
-  }
-}
-
-.swiper-container {
-  &__heading {
-    font-size: clamp(1.5rem, 1vw, 3rem);
-    text-align: center;
-    padding: 2rem 0;
-  }
-}
-
-.about-me-info {
-  &__paragraph {
-    font-size: clamp(1.5rem, 1.2vw, 3rem);
-    margin-top: -10rem;
-    line-height: 3.5rem;
-
-    @include respond(tab-port) {
-      margin-top: 10rem;
-      text-align: center;
-    }
   }
 }

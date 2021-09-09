@@ -103,10 +103,10 @@
   }
 
   @include respond(tab-land) {
-    --section-spacing: 20rem;
+    --section-spacing: 10rem;
   }
 
-  @include respond(phone) {
+  @include respond(tab-port) {
     --section-spacing: 5rem;
   }
 }

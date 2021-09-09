@@ -1,48 +1,49 @@
 @use 'abstracts' as *;
 
 .section-contact {
-  @include flex-config($justify: center, $align: center);
-  position: relative;
-  min-height: 70vh;
-  padding-bottom: 20rem;
-
   margin-top: var(--section-spacing);
+  padding-bottom: 20rem;
+}
+
+.contact-info {
+  @include flex-config($justify: space-around, $align: center);
+  width: 100%;
 
   @include respond(phone) {
     flex-direction: column-reverse;
     padding-bottom: 5rem;
   }
-}
 
-.contact-info {
-  @include flex-config($justify: space-around, $align: center);
-  width: 70%;
-
-  &::before {
-    @include pseudo($top: 15%, $left: 5%);
-    width: 25%;
-    border-top-width: 9px;
-    border-top-style: solid;
-    border-image: var(--pseudo-el-gradient-right);
-  }
-
-  @include respond(phone) {
-    width: 90%;
-    margin: 5rem 0;
-    padding-bottom: 20rem;
-  }
-
-  &__icon {
-    font-size: clamp(2rem, 2vw, 6rem);
-    cursor: pointer;
-    padding: 2rem;
-    background-color: var(--foreground);
-    color: var(--social-icons);
-    border-radius: 20%;
-    visibility: hidden;
+  .contact-info-icons {
+    @include flex-config($justify: space-between);
+    position: relative;
+    width: 50%;
 
     @include respond(phone) {
-      padding: 1.5rem;
+      width: 100%;
+      margin-top: 10rem;
+    }
+
+    &::before {
+      @include pseudo($top: -100%, $left: 0);
+      width: 50%;
+      border-top-width: 9px;
+      border-top-style: solid;
+      border-image: var(--pseudo-el-gradient-right);
+    }
+
+    &__icon {
+      font-size: clamp(2rem, 2vw, 6rem);
+      cursor: pointer;
+      padding: 2rem;
+      background-color: var(--foreground);
+      color: var(--social-icons);
+      border-radius: 20%;
+      visibility: hidden;
+
+      @include respond(phone) {
+        padding: 1.5rem;
+      }
     }
   }
 }
@@ -53,6 +54,5 @@
 
   @include respond(phone) {
     width: 50%;
-    margin-top: 18rem;
   }
 }

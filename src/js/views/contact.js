@@ -24,10 +24,12 @@ if (!isTypedContact) {
 
 const tl = gsap.timeline({ defaults: { duration: 1 } });
 
-const socialIconsContact = document.querySelectorAll('.contact-info__icon');
+const socialIconsContact = document.querySelectorAll(
+  '.contact-info-icons__icon'
+);
 
 tl.add('start').from(
-  '.contact-info__icon',
+  '.contact-info-icons__icon',
   {
     opacity: 0,
     stagger: 0.3,

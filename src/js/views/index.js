@@ -5,42 +5,10 @@ import {
   hoverAnimationPlay,
   hoverAnimationReverse,
 } from '../socialIconsAnimation';
+import * as icons from '../icons';
 import { library, dom } from '@fortawesome/fontawesome-svg-core';
-import {
-  faGithub,
-  faLinkedinIn,
-  faHtml5,
-  faCss3Alt,
-  faJsSquare,
-  faVuejs,
-  faSass,
-  faFigma,
-  faBootstrap,
-} from '@fortawesome/free-brands-svg-icons';
-import {
-  faTerminal,
-  faTools,
-  faMobile,
-  faCode,
-  faWind,
-} from '@fortawesome/free-solid-svg-icons';
 
-library.add(
-  faGithub,
-  faLinkedinIn,
-  faHtml5,
-  faCss3Alt,
-  faJsSquare,
-  faVuejs,
-  faSass,
-  faFigma,
-  faBootstrap,
-  faTerminal,
-  faTools,
-  faMobile,
-  faCode,
-  faWind
-);
+library.add(icons);
 
 dom.watch();
 

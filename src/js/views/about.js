@@ -3,53 +3,10 @@ import Typed from 'typed.js';
 import { aboutHeadingOptions } from '../typedOptions';
 import { gsap } from 'gsap';
 import { CSSRulePlugin } from 'gsap/CSSRulePlugin';
-
+import * as icons from '../icons';
 import { library, dom } from '@fortawesome/fontawesome-svg-core';
-import {
-  faGithub,
-  faFacebook,
-  faLinkedinIn,
-  faHtml5,
-  faCss3Alt,
-  faJsSquare,
-  faVuejs,
-  faSass,
-  faFigma,
-  faBootstrap,
-  faNpm,
-} from '@fortawesome/free-brands-svg-icons';
-import {
-  faTerminal,
-  faTools,
-  faMobile,
-  faCode,
-  faWind,
-  faBoxOpen,
-  faBox,
-  faEnvelope,
-} from '@fortawesome/free-solid-svg-icons';
 
-library.add(
-  faGithub,
-  faFacebook,
-  faLinkedinIn,
-  faHtml5,
-  faCss3Alt,
-  faJsSquare,
-  faVuejs,
-  faSass,
-  faFigma,
-  faBootstrap,
-  faTerminal,
-  faTools,
-  faMobile,
-  faCode,
-  faWind,
-  faBoxOpen,
-  faBox,
-  faNpm,
-  faEnvelope
-);
+library.add(icons);
 
 dom.watch();
 import '@fortawesome/fontawesome-free/css/fontawesome.css';

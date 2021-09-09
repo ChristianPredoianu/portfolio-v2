@@ -14,20 +14,20 @@ h4 {
 .heading-primary {
   @include textUppercaseSpacing($letterSpacing: 2rem);
   @include headings;
-  font-size: clamp(1.8rem, 2vw, 8rem);
-  margin-top: var(--heading-spacing);
+  font-size: var(--fs-primary-heading);
+  margin: var(--heading-spacing) 0;
 }
 
 .heading-secondary {
   @include textUppercaseSpacing($letterSpacing: 1rem);
   @include headings;
-  margin-top: var(--heading-spacing);
-  font-size: clamp(1.6rem, 2vw, 8rem);
+  font-size: var(--fs-secondary-heading);
+  margin: var(--heading-spacing) 0;
 }
 
 .welcome-section {
   &__heading-primary {
-    font-size: clamp(2.5rem, 2vw, 7rem);
+    font-size: clamp(2.5rem, 2vw + 1rem, 7rem);
     filter: drop-shadow(0.4rem 0.3rem 0.6rem rgb(184, 183, 183));
   }
 

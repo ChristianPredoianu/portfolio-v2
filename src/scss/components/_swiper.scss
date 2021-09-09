@@ -171,7 +171,6 @@
 .swiper-button-next {
   right: -5rem !important;
   color: var(--swiper-nav-clr) !important;
-  margin-top: 5rem !important;
 
   &::after {
     @include respond(phone) {
@@ -188,7 +187,6 @@
 .swiper-button-prev {
   left: -5rem !important;
   color: var(--swiper-nav-clr) !important;
-  margin-top: 5rem !important;
 
   &::after {
     @include respond(phone) {

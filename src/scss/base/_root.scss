@@ -80,6 +80,10 @@
   --box-shadow: var(--box-shadow-dark);
   --social-icons: var(--clr-secondary);
 
+  /*----------------------Font-sizes----------------------------*/
+  --fs-primary-heading: clamp(1.8rem, 2vw, 8rem);
+  --fs-secondary-heading: clamp(1.6rem, 2vw, 8rem);
+
   /*----------------------Spacings----------------------------*/
 
   --heading-spacing: 20rem;

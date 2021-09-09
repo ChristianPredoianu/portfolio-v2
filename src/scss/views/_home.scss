@@ -1,10 +1,6 @@
 @use 'abstracts' as *;
 @use 'utilities' as *;
 
-body {
-  position: relative;
-}
-
 .home-main {
   display: grid;
   grid: repeat(1, 1fr) / repeat(3, auto);

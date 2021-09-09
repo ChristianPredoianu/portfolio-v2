@@ -1,10 +1,19 @@
 @use 'abstracts' as *;
 
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
 footer {
-  @include position($pos: absolute, $bottom: 0);
   @include flex-config($direction: column, $align: center);
   width: 100%;
+  @include position($pos: absolute, $bottom: 0, $left: 0);
   background-color: #0a0a0a;
+
+  @include respond(big-desktop) {
+    @include position($pos: absolute, $bottom: 0, $left: 0);
+  }
 }
 
 .footer-icons {

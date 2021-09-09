@@ -4,19 +4,13 @@
   @include flex-config($justify: center, $align: center);
   position: relative;
   min-height: 70vh;
-  padding-bottom: 10rem;
+  padding-bottom: 20rem;
+
+  margin-top: var(--section-spacing);
 
   @include respond(phone) {
     flex-direction: column-reverse;
-    padding-bottom: 0;
-  }
-
-  &::before {
-    @include pseudo($top: 15%, $left: 5%);
-    width: 25%;
-    border-top-width: 9px;
-    border-top-style: solid;
-    border-image: var(--pseudo-el-gradient-right);
+    padding-bottom: 5rem;
   }
 }
 
@@ -24,7 +18,12 @@
   @include flex-config($justify: space-around, $align: center);
   width: 70%;
 
-  @include respond(tab-port) {
+  &::before {
+    @include pseudo($top: 15%, $left: 5%);
+    width: 25%;
+    border-top-width: 9px;
+    border-top-style: solid;
+    border-image: var(--pseudo-el-gradient-right);
   }
 
   @include respond(phone) {

@@ -1,13 +1,7 @@
 @use 'abstracts' as *;
 
 .section-about-me {
-  background-color: blue;
-  padding: var(--section-spacing) 0;
-}
-
-.section-tech {
-  padding: var(--section-spacing);
-  background-color: blue;
+  margin-top: var(--section-spacing);
 }
 
 .about-me {
@@ -81,6 +75,11 @@
       margin-top: 10rem;
     }
   }
+}
+
+.section-tech {
+  margin-top: var(--section-spacing);
+  padding-bottom: 30rem;
 }
 
 .container-tech {

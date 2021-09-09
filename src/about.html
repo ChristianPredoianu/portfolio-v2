@@ -50,283 +50,292 @@
     <script defer src="js/views/about.js"></script>
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="logo">
-          <a href="index.html"
-            ><p class="logo__heading">Christian Predoianu</p>
-            <p class="logo__subheading">front end developer</p>
-          </a>
-        </div>
-        <div class="theme-switch-wrapper">
-          <label class="theme-switch" for="checkbox">
-            <input type="checkbox" id="checkbox" class="theme-switch__input" />
-            <div class="slider round"></div>
-          </label>
-          <p class="theme-switch-wrapper__paragraph">Dark Mode</p>
-        </div>
-        <div class="hamburger" id="hamburger">
-          <div class="hamburger__line"></div>
-          <div class="hamburger__line"></div>
-          <div class="hamburger__line"></div>
-        </div>
-        <ul class="nav-links" role="list" id="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="about.html">About me</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <h1 class="heading-primary"><span class="about-typed"></span></h1>
-      <div class="section-about-me">
-      <div class="container">
-        <div class="about-me">
-          <div class="img-container">
-            <img
-              src="./assets/images/christian.jpg"
-              alt=""
-              class="img-container__img"
-            />
+    <div class="page-container">
+      <header>
+        <nav>
+          <div class="logo">
+            <a href="index.html"
+              ><p class="logo__heading">Christian Predoianu</p>
+              <p class="logo__subheading">front end developer</p>
+            </a>
           </div>
-          <div class="about-me-info">
-            <p class="about-me-info__paragraph">
-              I am a self-taught Front-end developer from Sweden who is
-              currently owner & front-end developer at CAP Development. My main
-              skills are HTML5, CSS3, JavaScript, TypeScript and Vue.js as a
-              framework but I also master Wordpress/Shopify. When I'm not
-              working on different projects I like to keep my Front-end
-              developer technologies skills up to date and always learn new
-              things by experimenting with different designs, animations,
-              smaller vanilla JavaScript projects or just try out some
-              JavaScript libraries that may come in handy in future projects. I
-              speak three fluent languages (Swedish, English and Romanian) and a
-              little bit of French. I also have a University Diploma with focus
-              on e-services. Find my graduation thesis about
-              <a
-                href="http://du.diva-portal.org/smash/record.jsf?pid=diva2%3A1198480&dswid=-8808"
-                rel="noopener"
-                target="_blank"
-                >WCAG 2.0</a
-              >
-
-              (in Swedish).
-            </p>
+          <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+              <input
+                type="checkbox"
+                id="checkbox"
+                class="theme-switch__input"
+              />
+              <div class="slider round"></div>
+            </label>
+            <p class="theme-switch-wrapper__paragraph">Dark Mode</p>
           </div>
+          <div class="hamburger" id="hamburger">
+            <div class="hamburger__line"></div>
+            <div class="hamburger__line"></div>
+            <div class="hamburger__line"></div>
+          </div>
+          <ul class="nav-links" role="list" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="section-about-me">
+          <h1 class="heading-primary"><span class="about-typed"></span></h1>
+          <div class="container">
+            <div class="about-me">
+              <div class="img-container">
+                <img
+                  src="./assets/images/christian.jpg"
+                  alt=""
+                  class="img-container__img"
+                />
+              </div>
+              <div class="about-me-info">
+                <p class="about-me-info__paragraph">
+                  I am a self-taught Front-end developer from Sweden who is
+                  currently owner & front-end developer at CAP Development. My
+                  main skills are HTML5, CSS3, JavaScript, TypeScript and Vue.js
+                  as a framework but I also master Wordpress/Shopify. When I'm
+                  not working on different projects I like to keep my Front-end
+                  developer technologies skills up to date and always learn new
+                  things by experimenting with different designs, animations,
+                  smaller vanilla JavaScript projects or just try out some
+                  JavaScript libraries that may come in handy in future
+                  projects. I speak three fluent languages (Swedish, English and
+                  Romanian) and a little bit of French. I also have a University
+                  Diploma with focus on e-services. Find my graduation thesis
+                  about
+                  <a
+                    href="http://du.diva-portal.org/smash/record.jsf?pid=diva2%3A1198480&dswid=-8808"
+                    rel="noopener"
+                    target="_blank"
+                    >WCAG 2.0</a
+                  >
+
+                  (in Swedish).
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-tech">
+          <h2 class="heading-secondary">Tech i use</h2>
+          <div class="container">
+            <div class="container-tech">
+              <div class="tech-icons-card">
+                <i
+                  class="
+                    fab
+                    fa-html5
+                    tech-icons-card__icon tech-icons-card__icon--html
+                  "
+                ></i>
+                <p class="tech-icons-card__paragraph">HTML5</p>
+              </div>
+              <div class="tech-icons-card">
+                <i
+                  class="
+                    fab
+                    fa-css3-alt
+                    tech-icons-card__icon tech-icons-card__icon--css
+                  "
+                ></i>
+                <p class="tech-icons-card__paragraph">Css3</p>
+              </div>
+
+              <div class="tech-icons-card">
+                <i
+                  class="
+                    fab
+                    fa-js-square
+                    tech-icons-card__icon tech-icons-card__icon--js
+                  "
+                ></i>
+                <p class="tech-icons-card__paragraph">JavaScript</p>
+              </div>
+              <div class="tech-icons-card">
+                <p
+                  class="
+                    tech-icons-card__icon tech-icons-card__icon--typescript
+                  "
+                >
+                  Ts
+                </p>
+                <p class="tech-icons-card__paragraph">TypeScript</p>
+              </div>
+              <div class="tech-icons-card">
+                <i
+                  class="
+                    fab
+                    fa-vuejs
+                    tech-icons-card__icon tech-icons-card__icon--vue
+                  "
+                ></i>
+                <p class="tech-icons-card__paragraph">Vue.js</p>
+              </div>
+              <div class="tech-icons-card">
+                <p class="tech-icons-card__icon tech-icons-card__icon--nuxt">
+                  Nuxt
+                </p>
+                <p class="tech-icons-card__paragraph">Nuxt.js</p>
+              </div>
+              <div class="tech-icons-card">
+                <i
+                  class="
+                    fas
+                    fa-box-open
+                    tech-icons-card__icon tech-icons-card__icon--parcel
+                  "
+                ></i>
+                <p class="tech-icons-card__paragraph">Parcel</p>
+              </div>
+              <div class="tech-icons-card">
+                <i
+                  class="
+                    fas
+                    fa-box
+                    tech-icons-card__icon tech-icons-card__icon--webpack
+                  "
+                ></i>
+                <p class="tech-icons-card__paragraph">Webpack</p>
+              </div>
+              <div class="tech-icons-card">
+                <i class="fab fa-github tech-icons-card__icon"></i>
+                <p class="tech-icons-card__paragraph">Github</p>
+              </div>
+              <div class="tech-icons-card">
+                <i
+                  class="
+                    fab
+                    fa-sass
+                    tech-icons-card__icon
+                    tech-icons-container__icon--sass
+                  "
+                ></i>
+                <p class="tech-icons-card__paragraph">Sass</p>
+              </div>
+              <div class="tech-icons-card">
+                <i class="fas fa-terminal tech-icons-card__icon"></i>
+                <p class="tech-icons-card__paragraph">Command Line</p>
+              </div>
+              <div class="tech-icons-card">
+                <i
+                  class="
+                    fas
+                    fa-tools
+                    tech-icons-card__icon tech-icons-card__icon--tools
+                  "
+                ></i>
+                <p class="tech-icons-card__paragraph">Dev Tools</p>
+              </div>
+              <div class="tech-icons-card">
+                <i
+                  class="
+                    fas
+                    fa-mobile
+                    tech-icons-card__icon tech-icons-card__icon--mobile
+                  "
+                ></i>
+                <p class="tech-icons-card__paragraph">Responsive Design</p>
+              </div>
+              <div class="tech-icons-card">
+                <i
+                  class="
+                    fas
+                    fa-code
+                    tech-icons-card__icon tech-icons-card__icon--code
+                  "
+                ></i>
+                <p class="tech-icons-card__paragraph">Vs Code</p>
+              </div>
+              <div class="tech-icons-card">
+                <p class="tech-icons-card__icon tech-icons-card__icon--bem">
+                  BEM
+                </p>
+                <p class="tech-icons-card__paragraph">BEM</p>
+              </div>
+              <div class="tech-icons-card">
+                <i
+                  class="
+                    fas
+                    fa-wind
+                    tech-icons-card__icon tech-icons-card__icon--tailwind
+                  "
+                ></i>
+                <p class="tech-icons-card__paragraph">Tailwind Css</p>
+              </div>
+              <div class="tech-icons-card">
+                <i
+                  class="
+                    fab
+                    fa-figma
+                    tech-icons-card__icon tech-icons-card__icon--figma
+                  "
+                ></i>
+                <p class="tech-icons-card__paragraph">Figma</p>
+              </div>
+              <div class="tech-icons-card">
+                <i
+                  class="
+                    fab
+                    fa-bootstrap
+                    tech-icons-card__icon tech-icons-card__icon--bootstrap
+                  "
+                ></i>
+                <p class="tech-icons-card__paragraph">Bootstrap 5</p>
+              </div>
+              <div class="tech-icons-card">
+                <i
+                  class="
+                    fab
+                    fa-npm
+                    tech-icons-card__icon tech-icons-card__icon--bootstrap
+                  "
+                ></i>
+                <p class="tech-icons-card__paragraph">NPM</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="footer-icons">
+          <a
+            href="https://github.com/ChristianPredoianu"
+            rel="noopener"
+            target="_blank"
+          >
+            <i class="fab fa-github footer-icons__icon"></i
+          ></a>
+          <a
+            href="https://se.linkedin.com/in/christian-predoianu-369218157"
+            rel="noopener"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin-in footer-icons__icon"></i
+          ></a>
+          <a href="mailto:christianpredoianu@yahoo.com">
+            <i class="fas fa-envelope footer-icons__icon"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/christian.predoianu/"
+            rel="noopener"
+            target="_blank"
+          >
+            <i class="fab fa-facebook footer-icons__icon"></i
+          ></a>
         </div>
-      </div>
+        <div class="footer-copyright">
+          <p>&copy; Christian Predoianu - 2021</p>
+        </div>
+      </footer>
     </div>
-    </main>
-
-    <h2 class="heading-secondary">Tech i use</h2>
-    <section class="section-tech">
-     
-      <div class="container">
-        
-        <div class="container-tech">
-          <div class="tech-icons-card">
-            <i
-              class="
-                fab
-                fa-html5
-                tech-icons-card__icon tech-icons-card__icon--html
-              "
-            ></i>
-            <p class="tech-icons-card__paragraph">HTML5</p>
-          </div>
-          <div class="tech-icons-card">
-            <i
-              class="
-                fab
-                fa-css3-alt
-                tech-icons-card__icon tech-icons-card__icon--css
-              "
-            ></i>
-            <p class="tech-icons-card__paragraph">Css3</p>
-          </div>
-
-          <div class="tech-icons-card">
-            <i
-              class="
-                fab
-                fa-js-square
-                tech-icons-card__icon tech-icons-card__icon--js
-              "
-            ></i>
-            <p class="tech-icons-card__paragraph">JavaScript</p>
-          </div>
-          <div class="tech-icons-card">
-            <p class="tech-icons-card__icon tech-icons-card__icon--typescript">
-              Ts
-            </p>
-            <p class="tech-icons-card__paragraph">TypeScript</p>
-          </div>
-          <div class="tech-icons-card">
-            <i
-              class="
-                fab
-                fa-vuejs
-                tech-icons-card__icon tech-icons-card__icon--vue
-              "
-            ></i>
-            <p class="tech-icons-card__paragraph">Vue.js</p>
-          </div>
-          <div class="tech-icons-card">
-            <p class="tech-icons-card__icon tech-icons-card__icon--nuxt">
-              Nuxt
-            </p>
-            <p class="tech-icons-card__paragraph">Nuxt.js</p>
-          </div>
-          <div class="tech-icons-card">
-            <i
-              class="
-                fas
-                fa-box-open
-                tech-icons-card__icon tech-icons-card__icon--parcel
-              "
-            ></i>
-            <p class="tech-icons-card__paragraph">Parcel</p>
-          </div>
-          <div class="tech-icons-card">
-            <i
-              class="
-                fas
-                fa-box
-                tech-icons-card__icon tech-icons-card__icon--webpack
-              "
-            ></i>
-            <p class="tech-icons-card__paragraph">Webpack</p>
-          </div>
-          <div class="tech-icons-card">
-            <i class="fab fa-github tech-icons-card__icon"></i>
-            <p class="tech-icons-card__paragraph">Github</p>
-          </div>
-          <div class="tech-icons-card">
-            <i
-              class="
-                fab
-                fa-sass
-                tech-icons-card__icon
-                tech-icons-container__icon--sass
-              "
-            ></i>
-            <p class="tech-icons-card__paragraph">Sass</p>
-          </div>
-          <div class="tech-icons-card">
-            <i class="fas fa-terminal tech-icons-card__icon"></i>
-            <p class="tech-icons-card__paragraph">Command Line</p>
-          </div>
-          <div class="tech-icons-card">
-            <i
-              class="
-                fas
-                fa-tools
-                tech-icons-card__icon tech-icons-card__icon--tools
-              "
-            ></i>
-            <p class="tech-icons-card__paragraph">Dev Tools</p>
-          </div>
-          <div class="tech-icons-card">
-            <i
-              class="
-                fas
-                fa-mobile
-                tech-icons-card__icon tech-icons-card__icon--mobile
-              "
-            ></i>
-            <p class="tech-icons-card__paragraph">Responsive Design</p>
-          </div>
-          <div class="tech-icons-card">
-            <i
-              class="
-                fas
-                fa-code
-                tech-icons-card__icon tech-icons-card__icon--code
-              "
-            ></i>
-            <p class="tech-icons-card__paragraph">Vs Code</p>
-          </div>
-          <div class="tech-icons-card">
-            <p class="tech-icons-card__icon tech-icons-card__icon--bem">BEM</p>
-            <p class="tech-icons-card__paragraph">BEM</p>
-          </div>
-          <div class="tech-icons-card">
-            <i
-              class="
-                fas
-                fa-wind
-                tech-icons-card__icon tech-icons-card__icon--tailwind
-              "
-            ></i>
-            <p class="tech-icons-card__paragraph">Tailwind Css</p>
-          </div>
-          <div class="tech-icons-card">
-            <i
-              class="
-                fab
-                fa-figma
-                tech-icons-card__icon tech-icons-card__icon--figma
-              "
-            ></i>
-            <p class="tech-icons-card__paragraph">Figma</p>
-          </div>
-          <div class="tech-icons-card">
-            <i
-              class="
-                fab
-                fa-bootstrap
-                tech-icons-card__icon tech-icons-card__icon--bootstrap
-              "
-            ></i>
-            <p class="tech-icons-card__paragraph">Bootstrap 5</p>
-          </div>
-          <div class="tech-icons-card">
-            <i
-              class="
-                fab
-                fa-npm
-                tech-icons-card__icon tech-icons-card__icon--bootstrap
-              "
-            ></i>
-            <p class="tech-icons-card__paragraph">NPM</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-    <footer>
-      <div class="footer-icons">
-        <a
-          href="https://github.com/ChristianPredoianu"
-          rel="noopener"
-          target="_blank"
-        >
-          <i class="fab fa-github footer-icons__icon"></i
-        ></a>
-        <a
-          href="https://se.linkedin.com/in/christian-predoianu-369218157"
-          rel="noopener"
-          target="_blank"
-        >
-          <i class="fab fa-linkedin-in footer-icons__icon"></i
-        ></a>
-        <a href="mailto:christianpredoianu@yahoo.com">
-          <i class="fas fa-envelope footer-icons__icon"></i
-        ></a>
-        <a
-          href="https://www.facebook.com/christian.predoianu/"
-          rel="noopener"
-          target="_blank"
-        >
-          <i class="fab fa-facebook footer-icons__icon"></i
-        ></a>
-      </div>
-      <div class="footer-copyright">
-        <p>&copy; Christian Predoianu - 2021</p>
-      </div>
-    </footer>
   </body>
 </html>

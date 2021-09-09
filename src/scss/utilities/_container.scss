@@ -12,19 +12,18 @@
 
 .container {
   margin: 0 auto;
-  max-width: 1280px;
-  background-color: red;
+  max-width: 128rem;
 
   @include respond(xxl) {
-    max-width: 1920px;
+    max-width: 192rem;
   }
 
   @include respond(tab-land) {
-    max-width: 900px;
+    max-width: 90rem;
   }
 
   @include respond(tab-port) {
-    max-width: 600px;
+    max-width: 60rem;
     padding: 0;
   }
 

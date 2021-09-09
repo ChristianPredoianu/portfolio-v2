@@ -1,24 +1,24 @@
 @use 'abstracts' as *;
 @use 'utilities' as *;
 
+.section-swipers {
+  margin-top: var(--section-spacing);
+  padding-bottom: 30rem;
+}
+
 .swipers-container {
   @include flex-config($justify: space-around, $align: center);
   position: relative;
-  background-color: blue;
-  padding: 20rem 0 20rem 0;
+
+  padding: 10rem 0;
 
   @include respond(tab-land) {
     flex-direction: column;
   }
 
-  @include respond(phone) {
-  }
-
   &__heading {
-    position: absolute;
-    top: -10rem;
-    left: 5rem;
-    z-index: 200;
+    @include position($pos: absolute, $top: -6rem);
+    width: 100%;
     font-size: clamp(1.6rem, 1vw, 3rem);
     text-align: center;
     padding: 2rem 0;

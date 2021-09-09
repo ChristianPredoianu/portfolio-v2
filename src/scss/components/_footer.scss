@@ -1,10 +1,5 @@
 @use 'abstracts' as *;
 
-.page-container {
-  position: relative;
-  min-height: 100vh;
-}
-
 footer {
   @include flex-config($direction: column, $align: center);
   width: 100%;

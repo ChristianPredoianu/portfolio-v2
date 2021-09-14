@@ -7,7 +7,7 @@
   </a>
 
   <h3 align="center">Portfolio Christian Predoianu</h3>
-
+ 
   <p align="center">
    My portfolio
     <br />
@@ -22,7 +22,7 @@
   </p>
 </p>
 
-
+ 
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">

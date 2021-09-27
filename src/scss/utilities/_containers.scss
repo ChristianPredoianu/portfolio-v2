@@ -1,0 +1,39 @@
+@use 'abstracts' as *;
+
+.container-welcome {
+  padding: 0 1.5rem;
+  max-width: 62.5rem;
+  margin: 0 auto;
+
+  @include respond(big-desktop) {
+    max-width: 90rem;
+  }
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 128rem;
+
+  @include respond(big-desktop) {
+    max-width: 180rem;
+  }
+
+  @include respond(tab-land) {
+    max-width: 90rem;
+  }
+
+  @include respond(tab-port) {
+    max-width: 60rem;
+    padding: 0;
+  }
+
+  @include respond(phone) {
+    width: 100%;
+    padding: 0 1rem;
+  }
+}

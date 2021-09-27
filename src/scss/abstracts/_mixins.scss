@@ -193,8 +193,8 @@
 600-900px:    Tablet: Portrait
 900-1280px:   Tablet Landscape
 [1280-1800px] Is where the normal styles apply
-1500-2560px :    Big Desktop
-2560px + : xxl
+1800+ :    Big Desktop
+
 $breakpoint argument choices
 - fold
 - phone
@@ -242,10 +242,10 @@ $breakpoint argument choices
     }
   }
 
-  @if $breakpoint == xxl {
+  /*  @if $breakpoint == xxl {
     @media (min-width: 160em) {
       //2560px
       @content;
     }
-  }
+  } */
 }

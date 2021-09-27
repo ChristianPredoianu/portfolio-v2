@@ -9,6 +9,10 @@
   box-shadow: var(--box-shadow);
   padding: 6rem;
 
+  @include respond(big-desktop) {
+    padding: 10rem;
+  }
+
   &__icon {
     @include icons;
     font-size: clamp(3rem, 2vw, 5rem);

@@ -88,10 +88,6 @@
 
   --heading-spacing: 20rem;
 
-  @include respond(xxl) {
-    --heading-spacing: 30rem;
-  }
-
   @include respond(tab-land) {
     --heading-spacing: 10rem;
   }
@@ -101,10 +97,6 @@
   }
 
   --section-spacing: 20rem;
-
-  @include respond(xxl) {
-    --section-spacing: 30rem;
-  }
 
   @include respond(tab-land) {
     --section-spacing: 10rem;

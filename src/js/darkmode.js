@@ -1,5 +1,5 @@
-const darkmodeToggler = document.querySelector('.theme-switch__input');
-const body = document.querySelector('body');
+const darkmodeToggler = document.querySelector('.theme-switch__input'),
+  body = document.querySelector('body');
 let darkmode = localStorage.getItem('darkmode');
 
 window.addEventListener('load', () => {

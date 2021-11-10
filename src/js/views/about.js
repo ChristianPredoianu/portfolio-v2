@@ -21,8 +21,8 @@ if (!isTypedAbout) {
 }
 
 gsap.registerPlugin(CSSRulePlugin);
-const imgBefore = CSSRulePlugin.getRule('.img-container::before');
-const imgAfter = CSSRulePlugin.getRule('.img-container::after');
+const imgBefore = CSSRulePlugin.getRule('.img-container::before'),
+  imgAfter = CSSRulePlugin.getRule('.img-container::after');
 
 gsap.to(imgBefore, {
   duration: 3,

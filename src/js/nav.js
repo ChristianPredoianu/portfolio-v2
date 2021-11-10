@@ -1,8 +1,6 @@
 import darkmode from './darkmode';
 
-const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('nav-links');
-
-hamburger.addEventListener('click', () => {
+document.getElementById('hamburger').addEventListener('click', () => {
+  const navLinks = document.getElementById('nav-links');
   navLinks.classList.toggle('open');
 });

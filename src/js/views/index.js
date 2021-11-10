@@ -16,9 +16,9 @@ import '@fortawesome/fontawesome-free/css/fontawesome.css';
 
 const tl = gsap.timeline({ defaults: { duration: 1 } });
 
-const hasAnimationPlayed = sessionStorage.getItem('isHeroAnimated');
-const isIconsRevealed = sessionStorage.getItem('isIconsRevealed');
-const socialIcons = document.querySelectorAll('.social-icons__icon');
+const hasAnimationPlayed = sessionStorage.getItem('isHeroAnimated'),
+  isIconsRevealed = sessionStorage.getItem('isIconsRevealed'),
+  socialIcons = document.querySelectorAll('.social-icons__icon');
 
 if (!hasAnimationPlayed) {
   tl.add('start').from('.animated', {

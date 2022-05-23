@@ -4,7 +4,7 @@
 <p align="center">
   <a href="https://github.com/ChristianPredoianu/portfolio-v2">
     <img src="src/assets/images/briefcase.jpg" alt="Logo" width="200" height="160">
-  </a>
+  </a> 
 
   <h3 align="center">Portfolio Christian Predoianu</h3>
  

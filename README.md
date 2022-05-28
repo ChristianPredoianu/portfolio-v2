@@ -17,7 +17,7 @@
     <a href="https://christianpredoianu.com/">View Demo</a>
     ·
     <a href="https://github.com/ChristianPredoianu/portfolio-v2/issues">Report Bug</a>
-    · 
+    ·  
    
   </p>
 </p>
